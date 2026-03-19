@@ -2,14 +2,18 @@
 
 A production-like end-to-end data engineering pipeline that ingests hourly weather data for 5 UK cities, transforms it through a medallion architecture, and serves aggregated climate analytics.
 
-## Stack
+## Tech stack
 
-- **Ingestion** — Python + Open-Meteo API (free, no key required)
-- **Bronze** — Raw JSON stored in Azure Data Lake Storage Gen2, partitioned by date
-- **Silver** — Cleaned and typed hourly fact table in Azure SQL (dbt incremental model)
-- **Gold** — Aggregated daily and monthly mart tables (dbt table models)
-- **Orchestration** — GitHub Actions, scheduled daily at 06:00 UTC
-- **Transformation** — dbt Core with tests and documentation
+| Layer | Technology | Purpose |
+|---|---|---|
+| Ingestion | Python 3.11 | API calls, blob uploads |
+| Source API | Open-Meteo | Free historical weather data, no key required |
+| Data Lake | Azure Data Lake Storage Gen2 | Raw JSON storage, date-partitioned |
+| Data Warehouse | Azure SQL Database | Staging, Silver, and Gold layers |
+| Transformation | dbt Core + dbt-sqlserver | SQL models, incremental loads, tests, docs |
+| Orchestration | GitHub Actions | Scheduled daily cron, workflow chaining |
+| Version Control | GitHub | Source control, CI/CD, secrets management |
+| Development | GitHub Codespaces | Cloud development environment |
 
 ## Architecture
 ```
@@ -18,20 +22,19 @@ Open-Meteo API → ADLS Gen2 (Bronze) → Azure SQL Staging → dbt Silver → d
                                                        GitHub Actions (daily cron)
 ```
 
+## Medallion layers
+
+**Bronze** — Raw hourly JSON files landed in ADLS Gen2, partitioned as `weather/year=YYYY/month=MM/day=DD/city.json`. No transformation, append-only.
+
+**Silver** — `stg_weather_hourly` — cleaned, typed incremental model in Azure SQL. Filters out nulls and out-of-range values. One row per city per hour.
+
+**Gold** — Two mart tables in Azure SQL, rebuilt daily:
+- `mart_weather_daily` — temperature range, precipitation totals, wind speeds, and derived flags (`is_rain_day`, `is_frost_day`, `is_snow_day`)
+- `mart_weather_monthly` — rolled up from daily mart, includes frost/rain/snow day counts and monthly climate averages
+
 ## Cities covered
 
 London · Manchester · Edinburgh · Birmingham · Cardiff
-
-## Data model
-
-**Silver — `stg_weather_hourly`**
-One row per city per hour. Cleaned, typed, and validated from raw Bronze JSON.
-
-**Gold — `mart_weather_daily`**
-One row per city per day. Includes temperature range, precipitation totals, wind speeds, and derived flags: `is_rain_day`, `is_frost_day`, `is_snow_day`.
-
-**Gold — `mart_weather_monthly`**
-One row per city per month. Rolled up from the daily mart. Includes frost day counts, rain day counts, monthly precipitation totals, and average temperatures.
 
 ## Pipeline flow
 
@@ -70,3 +73,9 @@ ORDER BY avg_temp DESC;
 ## Setup
 
 See full setup guide for Azure infrastructure, dbt configuration, and GitHub Secrets required to run this pipeline.
+
+## Requirements
+
+- Azure for Students subscription (free — no credit card required)
+- GitHub account with Codespaces enabled
+- No paid API keys required
