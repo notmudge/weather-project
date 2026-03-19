@@ -1,0 +1,2555 @@
+[0m17:30:24.368759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7010e1606600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7010e10245f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7010e1bea1e0>]}
+
+
+============================== 17:30:24.380281 | acbc082f-8b34-4568-8a2e-70938ae9b935 ==============================
+[0m17:30:24.380281 [info ] [MainThread]: Running with dbt=1.11.7
+[0m17:30:24.381640 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'quiet': 'False', 'partial_parse': 'True', 'target_path': 'None', 'cache_selected_only': 'False', 'log_path': 'logs', 'invocation_command': 'dbt init dbt_weather', 'write_json': 'True', 'indirect_selection': 'eager', 'version_check': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'static_parser': 'True', 'profiles_dir': '/home/codespace/.dbt', 'introspect': 'True', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'log_format': 'default', 'log_cache_events': 'False'}
+[0m17:30:24.395146 [info ] [MainThread]: Creating dbt configuration folder at /home/codespace/.dbt
+[0m17:30:24.398356 [debug] [MainThread]: Starter project path: /usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/include/starter_project
+[0m17:30:24.403009 [info ] [MainThread]: 
+Your new dbt project "dbt_weather" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m17:30:24.404067 [info ] [MainThread]: Setting up your profile.
+[0m17:31:47.742695 [info ] [MainThread]: Profile dbt_weather written to /home/codespace/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m17:31:47.746574 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 83.44037, "process_in_blocks": "21784", "process_kernel_time": 0.217387, "process_mem_max_rss": "135428", "process_out_blocks": "80", "process_user_time": 2.91302}
+[0m17:31:47.747875 [debug] [MainThread]: Command `dbt init` succeeded at 17:31:47.747680 after 83.44 seconds
+[0m17:31:47.748823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7010e0f22750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7010e0bd78c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7010e1f12f60>]}
+[0m17:31:47.749709 [debug] [MainThread]: Flushing usage events
+[0m17:31:48.095384 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:32:10.518025 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7571921f6f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75719166b530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x757191bd2870>]}
+
+
+============================== 17:32:10.523965 | 839107c4-4821-405f-89b4-4a1d24fffd2a ==============================
+[0m17:32:10.523965 [info ] [MainThread]: Running with dbt=1.11.7
+[0m17:32:10.525024 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'None', 'log_path': 'logs', 'use_colors': 'True', 'indirect_selection': 'eager', 'no_print': 'None', 'fail_fast': 'False', 'introspect': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'static_parser': 'True', 'printer_width': '80', 'cache_selected_only': 'False', 'write_json': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/home/codespace/.dbt', 'debug': 'False', 'invocation_command': 'dbt debug', 'quiet': 'False', 'warn_error': 'None'}
+[0m17:32:10.541896 [info ] [MainThread]: dbt version: 1.11.7
+[0m17:32:10.542707 [info ] [MainThread]: python version: 3.12.1
+[0m17:32:10.543456 [info ] [MainThread]: python path: /usr/local/python/3.12.1/bin/python3
+[0m17:32:10.544203 [info ] [MainThread]: os info: Linux-6.8.0-1044-azure-x86_64-with-glibc2.39
+[0m17:32:10.716198 [info ] [MainThread]: Using profiles dir at /home/codespace/.dbt
+[0m17:32:10.716879 [info ] [MainThread]: Using profiles.yml file at /home/codespace/.dbt/profiles.yml
+[0m17:32:10.717472 [info ] [MainThread]: Using dbt_project.yml file at /workspaces/weather-project/dbt_weather/dbt_project.yml
+[0m17:32:10.717999 [info ] [MainThread]: Configuration:
+[0m17:32:10.718507 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m17:32:10.718980 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m17:32:10.719487 [info ] [MainThread]: Required dependencies:
+[0m17:32:10.719992 [debug] [MainThread]: Executing "git --help"
+[0m17:32:10.725886 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:32:10.728195 [debug] [MainThread]: STDERR: "b''"
+[0m17:32:10.728884 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:32:10.729456 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m17:32:10.730011 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m17:32:10.730533 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "dbt_weather", target "dev" invalid: 'schema' is a required property
+
+
+[0m17:32:10.731031 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </workspaces/weather-project/dbt_weather/dbt_project.yml> not found
+
+[0m17:32:10.732123 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.27289963, "process_in_blocks": "0", "process_kernel_time": 0.182933, "process_mem_max_rss": "135716", "process_out_blocks": "24", "process_user_time": 2.716164}
+[0m17:32:10.732902 [debug] [MainThread]: Command `dbt debug` failed at 17:32:10.732787 after 0.27 seconds
+[0m17:32:10.733445 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7571914c9c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x757191d36ba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75718fa0e930>]}
+[0m17:32:10.733981 [debug] [MainThread]: Flushing usage events
+[0m17:32:11.070319 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:34:23.950069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713d8b271340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713d8d340d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713d8b1f7680>]}
+
+
+============================== 17:34:23.957275 | 34ee37ec-d598-4899-891f-903f6e14b682 ==============================
+[0m17:34:23.957275 [info ] [MainThread]: Running with dbt=1.11.7
+[0m17:34:23.958610 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'no_print': 'None', 'printer_width': '80', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'version_check': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'log_cache_events': 'False', 'write_json': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'debug': 'False', 'profiles_dir': '/home/codespace/.dbt', 'static_parser': 'True', 'log_path': '/workspaces/weather-project/dbt_weather/logs', 'quiet': 'False', 'empty': 'None', 'introspect': 'True', 'use_colors': 'True'}
+[0m17:34:23.977091 [info ] [MainThread]: dbt version: 1.11.7
+[0m17:34:23.978505 [info ] [MainThread]: python version: 3.12.1
+[0m17:34:23.979644 [info ] [MainThread]: python path: /usr/local/python/3.12.1/bin/python3
+[0m17:34:23.980785 [info ] [MainThread]: os info: Linux-6.8.0-1044-azure-x86_64-with-glibc2.39
+[0m17:34:24.159237 [info ] [MainThread]: Using profiles dir at /home/codespace/.dbt
+[0m17:34:24.159928 [info ] [MainThread]: Using profiles.yml file at /home/codespace/.dbt/profiles.yml
+[0m17:34:24.160529 [info ] [MainThread]: Using dbt_project.yml file at /workspaces/weather-project/dbt_weather/dbt_project.yml
+[0m17:34:24.161059 [info ] [MainThread]: adapter type: sqlserver
+[0m17:34:24.161568 [info ] [MainThread]: adapter version: 1.9.0
+[0m17:34:24.277189 [info ] [MainThread]: Configuration:
+[0m17:34:24.277880 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:34:24.278524 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m17:34:24.279223 [info ] [MainThread]: Required dependencies:
+[0m17:34:24.279916 [debug] [MainThread]: Executing "git --help"
+[0m17:34:24.283470 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:34:24.284133 [debug] [MainThread]: STDERR: "b''"
+[0m17:34:24.284819 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:34:24.285552 [info ] [MainThread]: Connection:
+[0m17:34:24.286403 [info ] [MainThread]:   server: weather-pipeline-mudge.database.windows.net
+[0m17:34:24.287209 [info ] [MainThread]:   database: free-sql-db-5344531
+[0m17:34:24.288130 [info ] [MainThread]:   schema: dbt_dev
+[0m17:34:24.288703 [info ] [MainThread]:   UID: mudge
+[0m17:34:24.289292 [info ] [MainThread]:   client_id: None
+[0m17:34:24.289978 [info ] [MainThread]:   authentication: sql
+[0m17:34:24.290682 [info ] [MainThread]:   encrypt: True
+[0m17:34:24.291378 [info ] [MainThread]:   trust_cert: False
+[0m17:34:24.291953 [info ] [MainThread]:   retries: 3
+[0m17:34:24.292526 [info ] [MainThread]:   login_timeout: 0
+[0m17:34:24.293216 [info ] [MainThread]:   query_timeout: 0
+[0m17:34:24.293897 [info ] [MainThread]:   trace_flag: False
+[0m17:34:24.294601 [info ] [MainThread]:   port: 1433
+[0m17:34:24.295507 [info ] [MainThread]: Registered adapter: sqlserver=1.9.0
+[0m17:34:24.415940 [debug] [MainThread]: Acquiring new sqlserver connection 'debug'
+[0m17:34:24.416566 [debug] [MainThread]: Using sqlserver connection "debug"
+[0m17:34:24.417021 [debug] [MainThread]: On debug: select 1 as id
+[0m17:34:24.417454 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:34:24.417928 [debug] [MainThread]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:34:24.861407 [debug] [MainThread]: fabric adapter: Error running SQL: select 1 as id
+[0m17:34:24.862032 [debug] [MainThread]: fabric adapter: Rolling back transaction.
+[0m17:34:24.862512 [debug] [MainThread]: On debug: No close available on handle
+[0m17:34:24.862988 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m17:34:24.863571 [info ] [MainThread]: [31m1 check failed:[0m
+[0m17:34:24.864147 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  ('28000', "[28000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Login failed for user 'mudge'. (18456) (SQLDriverConnect)")
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m17:34:24.865326 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.9727819, "process_in_blocks": "1040", "process_kernel_time": 0.23066, "process_mem_max_rss": "143132", "process_out_blocks": "24", "process_user_time": 3.027289}
+[0m17:34:24.866177 [debug] [MainThread]: Command `dbt debug` failed at 17:34:24.866057 after 0.97 seconds
+[0m17:34:24.866639 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m17:34:24.867161 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713d8cc99820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713d8a88b7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713d88f69a00>]}
+[0m17:34:24.867709 [debug] [MainThread]: Flushing usage events
+[0m17:34:25.219080 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:35:52.828558 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x735af67dcf50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x735af79f5700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x735af79f7d70>]}
+
+
+============================== 17:35:52.833736 | bc767be6-a388-43d9-ada2-de3639454745 ==============================
+[0m17:35:52.833736 [info ] [MainThread]: Running with dbt=1.11.7
+[0m17:35:52.834807 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'introspect': 'True', 'static_parser': 'True', 'log_cache_events': 'False', 'profiles_dir': '/home/codespace/.dbt', 'warn_error': 'None', 'invocation_command': 'dbt debug', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'log_path': '/workspaces/weather-project/dbt_weather/logs', 'empty': 'None', 'partial_parse': 'True', 'no_print': 'None', 'log_format': 'default', 'quiet': 'False', 'debug': 'False', 'target_path': 'None', 'printer_width': '80'}
+[0m17:35:52.848284 [info ] [MainThread]: dbt version: 1.11.7
+[0m17:35:52.849302 [info ] [MainThread]: python version: 3.12.1
+[0m17:35:52.850138 [info ] [MainThread]: python path: /usr/local/python/3.12.1/bin/python3
+[0m17:35:52.850890 [info ] [MainThread]: os info: Linux-6.8.0-1044-azure-x86_64-with-glibc2.39
+[0m17:35:53.036864 [info ] [MainThread]: Using profiles dir at /home/codespace/.dbt
+[0m17:35:53.037630 [info ] [MainThread]: Using profiles.yml file at /home/codespace/.dbt/profiles.yml
+[0m17:35:53.038223 [info ] [MainThread]: Using dbt_project.yml file at /workspaces/weather-project/dbt_weather/dbt_project.yml
+[0m17:35:53.038744 [info ] [MainThread]: adapter type: sqlserver
+[0m17:35:53.039250 [info ] [MainThread]: adapter version: 1.9.0
+[0m17:35:53.157257 [info ] [MainThread]: Configuration:
+[0m17:35:53.157947 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:35:53.158514 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m17:35:53.159013 [info ] [MainThread]: Required dependencies:
+[0m17:35:53.159545 [debug] [MainThread]: Executing "git --help"
+[0m17:35:53.162637 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:35:53.163539 [debug] [MainThread]: STDERR: "b''"
+[0m17:35:53.163974 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:35:53.164553 [info ] [MainThread]: Connection:
+[0m17:35:53.165508 [info ] [MainThread]:   server: weather-pipeline-mudge.database.windows.net
+[0m17:35:53.166231 [info ] [MainThread]:   database: free-sql-db-5344531
+[0m17:35:53.166917 [info ] [MainThread]:   schema: dbt_dev
+[0m17:35:53.167639 [info ] [MainThread]:   UID: mudge
+[0m17:35:53.168308 [info ] [MainThread]:   client_id: None
+[0m17:35:53.168973 [info ] [MainThread]:   authentication: sql
+[0m17:35:53.169670 [info ] [MainThread]:   encrypt: True
+[0m17:35:53.170346 [info ] [MainThread]:   trust_cert: False
+[0m17:35:53.171075 [info ] [MainThread]:   retries: 3
+[0m17:35:53.171741 [info ] [MainThread]:   login_timeout: 0
+[0m17:35:53.172398 [info ] [MainThread]:   query_timeout: 0
+[0m17:35:53.172885 [info ] [MainThread]:   trace_flag: False
+[0m17:35:53.173395 [info ] [MainThread]:   port: 1433
+[0m17:35:53.174293 [info ] [MainThread]: Registered adapter: sqlserver=1.9.0
+[0m17:35:53.325698 [debug] [MainThread]: Acquiring new sqlserver connection 'debug'
+[0m17:35:53.326304 [debug] [MainThread]: Using sqlserver connection "debug"
+[0m17:35:53.326770 [debug] [MainThread]: On debug: select 1 as id
+[0m17:35:53.327214 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:35:53.327689 [debug] [MainThread]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:35:53.706930 [debug] [MainThread]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:35:53.729436 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m17:35:53.730721 [debug] [MainThread]: On debug: Close
+[0m17:35:53.731223 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m17:35:53.731801 [info ] [MainThread]: [32mAll checks passed![0m
+[0m17:35:53.732947 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.9640288, "process_in_blocks": "0", "process_kernel_time": 0.208462, "process_mem_max_rss": "143436", "process_out_blocks": "24", "process_user_time": 3.032626}
+[0m17:35:53.733814 [debug] [MainThread]: Command `dbt debug` succeeded at 17:35:53.733697 after 0.97 seconds
+[0m17:35:53.734278 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m17:35:53.734735 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x735af5d74800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x735af42bd6a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x735af6f26930>]}
+[0m17:35:53.735312 [debug] [MainThread]: Flushing usage events
+[0m17:35:54.086474 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:37:18.155461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77e9cdd891f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77e9cb4ffbc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77e9cb4fde50>]}
+
+
+============================== 17:37:18.161760 | 49e48ccd-4bb9-486f-a38c-978f6cf4114c ==============================
+[0m17:37:18.161760 [info ] [MainThread]: Running with dbt=1.11.7
+[0m17:37:18.165493 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'quiet': 'False', 'empty': 'False', 'no_print': 'None', 'version_check': 'True', 'indirect_selection': 'eager', 'target_path': 'None', 'use_experimental_parser': 'False', 'printer_width': '80', 'static_parser': 'True', 'debug': 'False', 'log_format': 'default', 'fail_fast': 'False', 'introspect': 'True', 'invocation_command': 'dbt run --select silver', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'partial_parse': 'True', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'write_json': 'True', 'profiles_dir': '/home/codespace/.dbt'}
+[0m17:37:18.167515 [error] [MainThread]: Encountered an error:
+Runtime Error
+  dbt_project.yml does not parse to a dictionary
+[0m17:37:18.171756 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.074395075, "process_in_blocks": "0", "process_kernel_time": 0.136462, "process_mem_max_rss": "117552", "process_out_blocks": "8", "process_user_time": 2.693658}
+[0m17:37:18.176230 [debug] [MainThread]: Command `dbt run` failed at 17:37:18.176000 after 0.08 seconds
+[0m17:37:18.177278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77e9d0757c20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77e9cb233920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77e9cdd891f0>]}
+[0m17:37:18.178228 [debug] [MainThread]: Flushing usage events
+[0m17:37:18.546288 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:38:49.397623 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2a124f5400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2a12a2e7e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2a12a2e810>]}
+
+
+============================== 17:38:49.404466 | 18d89d56-da77-4bc2-8fed-43cbf837cf89 ==============================
+[0m17:38:49.404466 [info ] [MainThread]: Running with dbt=1.11.7
+[0m17:38:49.405965 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'no_print': 'None', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --select silver', 'fail_fast': 'False', 'quiet': 'False', 'log_format': 'default', 'write_json': 'True', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'empty': 'False', 'static_parser': 'True', 'version_check': 'True', 'use_colors': 'True', 'warn_error': 'None', 'introspect': 'True', 'target_path': 'None', 'cache_selected_only': 'False', 'printer_width': '80', 'log_cache_events': 'False', 'log_path': '/workspaces/weather-project/dbt_weather/logs', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/home/codespace/.dbt'}
+[0m17:38:49.805164 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '18d89d56-da77-4bc2-8fed-43cbf837cf89', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2a102add00>]}
+[0m17:38:49.889204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '18d89d56-da77-4bc2-8fed-43cbf837cf89', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2a103857c0>]}
+[0m17:38:49.890053 [info ] [MainThread]: Registered adapter: sqlserver=1.9.0
+[0m17:38:50.020766 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m17:38:50.021734 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m17:38:50.022367 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '18d89d56-da77-4bc2-8fed-43cbf837cf89', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2a101e1430>]}
+[0m17:38:51.794065 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.dbt_weather.stg_weather_hourly' (models/silver/stg_weather_hourly.sql) depends on a source named 'bronze.bronze_weather_raw' which was not found
+[0m17:38:51.795456 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.5068848, "process_in_blocks": "0", "process_kernel_time": 0.257486, "process_mem_max_rss": "147860", "process_out_blocks": "16", "process_user_time": 4.749634}
+[0m17:38:51.796303 [debug] [MainThread]: Command `dbt run` failed at 17:38:51.796178 after 2.51 seconds
+[0m17:38:51.796809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2a11c675f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2a10025a30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2a0f895cd0>]}
+[0m17:38:51.797361 [debug] [MainThread]: Flushing usage events
+[0m17:38:52.146784 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:40:37.421376 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7631c8a994f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7631c7d1f860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7631c8b99fd0>]}
+
+
+============================== 17:40:37.427799 | 285ed4dc-3d7a-4ac4-ba60-958a261dc6da ==============================
+[0m17:40:37.427799 [info ] [MainThread]: Running with dbt=1.11.7
+[0m17:40:37.429512 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'use_colors': 'True', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'version_check': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/home/codespace/.dbt', 'warn_error': 'None', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'invocation_command': 'dbt run --select silver', 'use_experimental_parser': 'False', 'log_path': '/workspaces/weather-project/dbt_weather/logs', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'no_print': 'None', 'empty': 'False', 'write_json': 'True'}
+[0m17:40:37.734025 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '285ed4dc-3d7a-4ac4-ba60-958a261dc6da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7631c4636ea0>]}
+[0m17:40:37.800933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '285ed4dc-3d7a-4ac4-ba60-958a261dc6da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7631c6838650>]}
+[0m17:40:37.801791 [info ] [MainThread]: Registered adapter: sqlserver=1.9.0
+[0m17:40:37.918584 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m17:40:37.919427 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m17:40:37.920035 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '285ed4dc-3d7a-4ac4-ba60-958a261dc6da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7631c5148830>]}
+[0m17:40:40.055017 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_weather.gold
+[0m17:40:40.066118 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '285ed4dc-3d7a-4ac4-ba60-958a261dc6da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7631c40f3fe0>]}
+[0m17:40:40.191355 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/weather-project/dbt_weather/target/manifest.json
+[0m17:40:40.193424 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/weather-project/dbt_weather/target/semantic_manifest.json
+[0m17:40:40.208408 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '285ed4dc-3d7a-4ac4-ba60-958a261dc6da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7631c3bdd100>]}
+[0m17:40:40.209072 [info ] [MainThread]: Found 3 models, 7 data tests, 1 source, 539 macros
+[0m17:40:40.209676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '285ed4dc-3d7a-4ac4-ba60-958a261dc6da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7631c39fc140>]}
+[0m17:40:40.211482 [info ] [MainThread]: 
+[0m17:40:40.212055 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:40:40.212546 [info ] [MainThread]: 
+[0m17:40:40.213242 [debug] [MainThread]: Acquiring new sqlserver connection 'master'
+[0m17:40:40.214288 [debug] [ThreadPool]: Acquiring new sqlserver connection 'list_free-sql-db-5344531'
+[0m17:40:40.231796 [debug] [ThreadPool]: dbt-sqlserver
+[0m17:40:40.232437 [debug] [ThreadPool]: Using sqlserver connection "list_free-sql-db-5344531"
+[0m17:40:40.232900 [debug] [ThreadPool]: On list_free-sql-db-5344531: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "connection_name": "list_free-sql-db-5344531"} */
+USE [free-sql-db-5344531];
+    select  name as [schema]
+    from sys.schemas with (nolock) 
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m17:40:40.233357 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:40:40.233834 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:40:40.632182 [debug] [ThreadPool]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:40:40.684780 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:40:40.687242 [debug] [ThreadPool]: On list_free-sql-db-5344531: Close
+[0m17:40:40.688150 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_free-sql-db-5344531, now create_free-sql-db-5344531_dbt_dev_silver)
+[0m17:40:40.688746 [debug] [ThreadPool]: Creating schema "database: "free-sql-db-5344531"
+schema: "dbt_dev_silver"
+"
+[0m17:40:40.693811 [debug] [ThreadPool]: Using sqlserver connection "create_free-sql-db-5344531_dbt_dev_silver"
+[0m17:40:40.694294 [debug] [ThreadPool]: On create_free-sql-db-5344531_dbt_dev_silver: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "connection_name": "create_free-sql-db-5344531_dbt_dev_silver"} */
+USE [free-sql-db-5344531];
+    IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbt_dev_silver')
+    BEGIN
+    EXEC('CREATE SCHEMA [dbt_dev_silver]')
+    END
+  
+[0m17:40:40.694721 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:40:40.695225 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:40:40.695706 [debug] [ThreadPool]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:40:40.722592 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:40:40.723847 [debug] [ThreadPool]: On create_free-sql-db-5344531_dbt_dev_silver: COMMIT
+[0m17:40:40.724341 [debug] [ThreadPool]: On create_free-sql-db-5344531_dbt_dev_silver: Close
+[0m17:40:40.731337 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_free-sql-db-5344531_dbt_dev_silver, now list_free-sql-db-5344531_dbt_dev)
+[0m17:40:40.738412 [debug] [ThreadPool]: dbt-sqlserver
+[0m17:40:40.738956 [debug] [ThreadPool]: Using sqlserver connection "list_free-sql-db-5344531_dbt_dev"
+[0m17:40:40.739447 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "connection_name": "list_free-sql-db-5344531_dbt_dev"} */
+USE [free-sql-db-5344531];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t with (nolock)
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v with (nolock)
+    )
+    select * from base
+    where [schema] like 'dbt_dev'
+    
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m17:40:40.739908 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:40:40.740383 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:40:40.740861 [debug] [ThreadPool]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:40:40.793856 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:40:40.795406 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev: ROLLBACK
+[0m17:40:40.795892 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev: Close
+[0m17:40:40.796550 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_free-sql-db-5344531_dbt_dev, now list_free-sql-db-5344531_dbt_dev_silver)
+[0m17:40:40.799412 [debug] [ThreadPool]: dbt-sqlserver
+[0m17:40:40.799897 [debug] [ThreadPool]: Using sqlserver connection "list_free-sql-db-5344531_dbt_dev_silver"
+[0m17:40:40.800447 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev_silver: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "connection_name": "list_free-sql-db-5344531_dbt_dev_silver"} */
+USE [free-sql-db-5344531];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t with (nolock)
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v with (nolock)
+    )
+    select * from base
+    where [schema] like 'dbt_dev_silver'
+    
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m17:40:40.800861 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:40:40.801330 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:40:40.801792 [debug] [ThreadPool]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:40:40.847294 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:40:40.851599 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev_silver: ROLLBACK
+[0m17:40:40.852285 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev_silver: Close
+[0m17:40:40.853122 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '285ed4dc-3d7a-4ac4-ba60-958a261dc6da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7631c42ab080>]}
+[0m17:40:40.853748 [debug] [MainThread]: On master: COMMIT
+[0m17:40:40.856263 [debug] [Thread-1 (]: Began running node model.dbt_weather.stg_weather_hourly
+[0m17:40:40.856917 [info ] [Thread-1 (]: 1 of 1 START sql incremental model dbt_dev_silver.stg_weather_hourly ........... [RUN]
+[0m17:40:40.857864 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_free-sql-db-5344531_dbt_dev_silver, now model.dbt_weather.stg_weather_hourly)
+[0m17:40:40.858403 [debug] [Thread-1 (]: Began compiling node model.dbt_weather.stg_weather_hourly
+[0m17:40:40.867821 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_weather.stg_weather_hourly"
+[0m17:40:40.868772 [debug] [Thread-1 (]: Began executing node model.dbt_weather.stg_weather_hourly
+[0m17:40:40.924959 [debug] [Thread-1 (]: dbt-sqlserver
+[0m17:40:40.932160 [debug] [Thread-1 (]: Applying DROP to: "free-sql-db-5344531"."dbt_dev_silver"."stg_weather_hourly__dbt_tmp_vw"
+[0m17:40:40.941224 [debug] [Thread-1 (]: dbt-sqlserver
+[0m17:40:40.941812 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_weather.stg_weather_hourly"
+[0m17:40:40.942380 [debug] [Thread-1 (]: On model.dbt_weather.stg_weather_hourly: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.stg_weather_hourly"} */
+
+        USE [free-sql-db-5344531];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs
+        inner join sys.objects obj
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'free-sql-db-5344531'
+        and refs.referenced_schema_name = 'dbt_dev_silver'
+        and refs.referenced_entity_name = 'stg_weather_hourly__dbt_tmp_vw'
+        and refs.referencing_class = 1
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-sqlserver');
+
+      
+[0m17:40:40.942899 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:40:40.943415 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:40:40.943934 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:40:40.978956 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:40:40.980921 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_weather.stg_weather_hourly"
+[0m17:40:40.981530 [debug] [Thread-1 (]: On model.dbt_weather.stg_weather_hourly: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.stg_weather_hourly"} */
+
+      
+      
+    
+    USE [free-sql-db-5344531];
+    EXEC('DROP view IF EXISTS "dbt_dev_silver"."stg_weather_hourly__dbt_tmp_vw";');
+
+[0m17:40:41.002962 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:40:41.022405 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_weather.stg_weather_hourly"
+[0m17:40:41.023404 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_weather.stg_weather_hourly"
+[0m17:40:41.024021 [debug] [Thread-1 (]: On model.dbt_weather.stg_weather_hourly: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.stg_weather_hourly"} */
+
+      
+  
+    USE [free-sql-db-5344531];
+    USE [free-sql-db-5344531];
+    
+    
+
+    
+
+    
+    USE [free-sql-db-5344531];
+    EXEC('
+        create view "dbt_dev_silver"."stg_weather_hourly__dbt_tmp_vw" as 
+
+WITH source AS (
+
+    SELECT
+        LOWER(TRIM(location_name))             AS location_name,
+        CAST(observation_dt AS DATE)           AS observation_dt,
+        CAST(hour_utc AS TINYINT)              AS hour_utc,
+        CAST(temperature_2m AS FLOAT)          AS temperature_c,
+        CAST(apparent_temp AS FLOAT)           AS apparent_temp_c,
+        CAST(precipitation AS FLOAT)           AS precipitation_mm,
+        CAST(rain AS FLOAT)                    AS rain_mm,
+        CAST(snowfall AS FLOAT)                AS snowfall_cm,
+        CAST(windspeed_10m AS FLOAT)           AS windspeed_kmh,
+        CAST(windgusts_10m AS FLOAT)           AS windgusts_kmh,
+        CAST(cloudcover AS FLOAT)              AS cloudcover_pct,
+        CAST(weathercode AS INT)               AS wmo_weathercode,
+        CAST(humidity_2m AS FLOAT)             AS humidity_pct,
+        CAST(ingested_at AS DATE)              AS ingested_at
+
+    FROM "free-sql-db-5344531"."dbo"."bronze_weather_raw"
+
+    WHERE
+        observation_dt IS NOT NULL
+        AND hour_utc BETWEEN 0 AND 23
+        AND temperature_2m BETWEEN -80 AND 60
+
+    
+
+)
+
+SELECT * FROM source;
+    ')
+
+EXEC('
+            SELECT * INTO "free-sql-db-5344531"."dbt_dev_silver"."stg_weather_hourly" FROM "free-sql-db-5344531"."dbt_dev_silver"."stg_weather_hourly__dbt_tmp_vw" 
+    OPTION (LABEL = ''dbt-sqlserver'');
+
+        ')
+
+    
+    EXEC('DROP VIEW IF EXISTS dbt_dev_silver.stg_weather_hourly__dbt_tmp_vw')
+
+
+
+    
+    use [free-sql-db-5344531];
+    if EXISTS (
+        SELECT *
+        FROM sys.indexes with (nolock)
+        WHERE name = 'dbt_dev_silver_stg_weather_hourly_cci'
+        AND object_id=object_id('dbt_dev_silver_stg_weather_hourly')
+    )
+    DROP index "dbt_dev_silver"."stg_weather_hourly".dbt_dev_silver_stg_weather_hourly_cci
+    CREATE CLUSTERED COLUMNSTORE INDEX dbt_dev_silver_stg_weather_hourly_cci
+    ON "dbt_dev_silver"."stg_weather_hourly"
+
+   
+
+
+  
+  
+[0m17:40:41.123655 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:40:41.142204 [debug] [Thread-1 (]: On model.dbt_weather.stg_weather_hourly: COMMIT
+[0m17:40:41.144491 [debug] [Thread-1 (]: On model.dbt_weather.stg_weather_hourly: Close
+[0m17:40:41.146993 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '285ed4dc-3d7a-4ac4-ba60-958a261dc6da', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7631c8871d00>]}
+[0m17:40:41.148235 [info ] [Thread-1 (]: 1 of 1 OK created sql incremental model dbt_dev_silver.stg_weather_hourly ...... [[32mOK[0m in 0.29s]
+[0m17:40:41.149473 [debug] [Thread-1 (]: Finished running node model.dbt_weather.stg_weather_hourly
+[0m17:40:41.151592 [debug] [MainThread]: On master: COMMIT
+[0m17:40:41.154556 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:40:41.155565 [debug] [MainThread]: Connection 'model.dbt_weather.stg_weather_hourly' was properly closed.
+[0m17:40:41.156375 [info ] [MainThread]: 
+[0m17:40:41.157390 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 0.94 seconds (0.94s).
+[0m17:40:41.158810 [debug] [MainThread]: Command end result
+[0m17:40:41.201346 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/weather-project/dbt_weather/target/manifest.json
+[0m17:40:41.203410 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/weather-project/dbt_weather/target/semantic_manifest.json
+[0m17:40:41.209023 [debug] [MainThread]: Wrote artifact RunExecutionResult to /workspaces/weather-project/dbt_weather/target/run_results.json
+[0m17:40:41.209499 [info ] [MainThread]: 
+[0m17:40:41.210137 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:40:41.210634 [info ] [MainThread]: 
+[0m17:40:41.211196 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m17:40:41.212286 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 3.8487885, "process_in_blocks": "560", "process_kernel_time": 0.281987, "process_mem_max_rss": "160280", "process_out_blocks": "3696", "process_user_time": 5.104474}
+[0m17:40:41.212910 [debug] [MainThread]: Command `dbt run` succeeded at 17:40:41.212799 after 3.85 seconds
+[0m17:40:41.213407 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7631cb467bf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7631c41b5d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7631c6db4620>]}
+[0m17:40:41.213899 [debug] [MainThread]: Flushing usage events
+[0m17:40:41.614373 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:41:24.009592 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x778bb93c59d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x778bb9c145c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x778bbb9d0c20>]}
+
+
+============================== 17:41:24.016107 | fbd486a6-6b3e-4694-adb4-a1e0942cbd8d ==============================
+[0m17:41:24.016107 [info ] [MainThread]: Running with dbt=1.11.7
+[0m17:41:24.018070 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'fail_fast': 'False', 'version_check': 'True', 'quiet': 'False', 'log_cache_events': 'False', 'log_format': 'default', 'cache_selected_only': 'False', 'log_path': '/workspaces/weather-project/dbt_weather/logs', 'indirect_selection': 'eager', 'introspect': 'True', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'no_print': 'None', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/home/codespace/.dbt', 'static_parser': 'True', 'debug': 'False', 'partial_parse': 'True', 'empty': 'False', 'write_json': 'True', 'invocation_command': 'dbt run --select gold', 'warn_error': 'None'}
+[0m17:41:24.314470 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fbd486a6-6b3e-4694-adb4-a1e0942cbd8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x778bb9b3ce30>]}
+[0m17:41:24.381614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fbd486a6-6b3e-4694-adb4-a1e0942cbd8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x778bb9aaba10>]}
+[0m17:41:24.382502 [info ] [MainThread]: Registered adapter: sqlserver=1.9.0
+[0m17:41:24.504870 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m17:41:24.619790 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 0 files changed.
+[0m17:41:24.620512 [debug] [MainThread]: Partial parsing: added file: dbt_weather://models/gold/mart_weather_monthly.sql
+[0m17:41:24.621029 [debug] [MainThread]: Partial parsing: added file: dbt_weather://models/gold/mart_weather_daily.sql
+[0m17:41:24.995627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fbd486a6-6b3e-4694-adb4-a1e0942cbd8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x778bb77afbc0>]}
+[0m17:41:25.082812 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/weather-project/dbt_weather/target/manifest.json
+[0m17:41:25.084932 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/weather-project/dbt_weather/target/semantic_manifest.json
+[0m17:41:25.098163 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fbd486a6-6b3e-4694-adb4-a1e0942cbd8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x778bbae0c260>]}
+[0m17:41:25.098802 [info ] [MainThread]: Found 5 models, 7 data tests, 1 source, 539 macros
+[0m17:41:25.099442 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fbd486a6-6b3e-4694-adb4-a1e0942cbd8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x778bb73cdbe0>]}
+[0m17:41:25.101294 [info ] [MainThread]: 
+[0m17:41:25.101854 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:41:25.102378 [info ] [MainThread]: 
+[0m17:41:25.103085 [debug] [MainThread]: Acquiring new sqlserver connection 'master'
+[0m17:41:25.109663 [debug] [ThreadPool]: Acquiring new sqlserver connection 'list_free-sql-db-5344531'
+[0m17:41:25.126971 [debug] [ThreadPool]: dbt-sqlserver
+[0m17:41:25.127617 [debug] [ThreadPool]: Using sqlserver connection "list_free-sql-db-5344531"
+[0m17:41:25.128100 [debug] [ThreadPool]: On list_free-sql-db-5344531: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "connection_name": "list_free-sql-db-5344531"} */
+USE [free-sql-db-5344531];
+    select  name as [schema]
+    from sys.schemas with (nolock) 
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m17:41:25.128540 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:41:25.129032 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:41:25.503547 [debug] [ThreadPool]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:41:25.524946 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:41:25.526649 [debug] [ThreadPool]: On list_free-sql-db-5344531: Close
+[0m17:41:25.527508 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_free-sql-db-5344531, now create_free-sql-db-5344531_dbt_dev_gold)
+[0m17:41:25.528165 [debug] [ThreadPool]: Creating schema "database: "free-sql-db-5344531"
+schema: "dbt_dev_gold"
+"
+[0m17:41:25.533358 [debug] [ThreadPool]: Using sqlserver connection "create_free-sql-db-5344531_dbt_dev_gold"
+[0m17:41:25.533827 [debug] [ThreadPool]: On create_free-sql-db-5344531_dbt_dev_gold: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "connection_name": "create_free-sql-db-5344531_dbt_dev_gold"} */
+USE [free-sql-db-5344531];
+    IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbt_dev_gold')
+    BEGIN
+    EXEC('CREATE SCHEMA [dbt_dev_gold]')
+    END
+  
+[0m17:41:25.534293 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:41:25.534789 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:41:25.535268 [debug] [ThreadPool]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:41:25.563861 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:41:25.565062 [debug] [ThreadPool]: On create_free-sql-db-5344531_dbt_dev_gold: COMMIT
+[0m17:41:25.565577 [debug] [ThreadPool]: On create_free-sql-db-5344531_dbt_dev_gold: Close
+[0m17:41:25.567132 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_free-sql-db-5344531_dbt_dev_gold, now list_free-sql-db-5344531_dbt_dev)
+[0m17:41:25.573585 [debug] [ThreadPool]: dbt-sqlserver
+[0m17:41:25.574149 [debug] [ThreadPool]: Using sqlserver connection "list_free-sql-db-5344531_dbt_dev"
+[0m17:41:25.574619 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "connection_name": "list_free-sql-db-5344531_dbt_dev"} */
+USE [free-sql-db-5344531];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t with (nolock)
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v with (nolock)
+    )
+    select * from base
+    where [schema] like 'dbt_dev'
+    
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m17:41:25.575057 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:41:25.575523 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:41:25.575984 [debug] [ThreadPool]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:41:25.599069 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:41:25.601814 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev: ROLLBACK
+[0m17:41:25.602544 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev: Close
+[0m17:41:25.603541 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_free-sql-db-5344531_dbt_dev, now list_free-sql-db-5344531_dbt_dev_silver)
+[0m17:41:25.607200 [debug] [ThreadPool]: dbt-sqlserver
+[0m17:41:25.607779 [debug] [ThreadPool]: Using sqlserver connection "list_free-sql-db-5344531_dbt_dev_silver"
+[0m17:41:25.608305 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev_silver: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "connection_name": "list_free-sql-db-5344531_dbt_dev_silver"} */
+USE [free-sql-db-5344531];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t with (nolock)
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v with (nolock)
+    )
+    select * from base
+    where [schema] like 'dbt_dev_silver'
+    
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m17:41:25.608984 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:41:25.609727 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:41:25.610441 [debug] [ThreadPool]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:41:25.632930 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:41:25.634438 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev_silver: ROLLBACK
+[0m17:41:25.634914 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev_silver: Close
+[0m17:41:25.635571 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_free-sql-db-5344531_dbt_dev_silver, now list_free-sql-db-5344531_dbt_dev_gold)
+[0m17:41:25.638891 [debug] [ThreadPool]: dbt-sqlserver
+[0m17:41:25.639435 [debug] [ThreadPool]: Using sqlserver connection "list_free-sql-db-5344531_dbt_dev_gold"
+[0m17:41:25.639898 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev_gold: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "connection_name": "list_free-sql-db-5344531_dbt_dev_gold"} */
+USE [free-sql-db-5344531];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t with (nolock)
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v with (nolock)
+    )
+    select * from base
+    where [schema] like 'dbt_dev_gold'
+    
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m17:41:25.640364 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:41:25.640800 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:41:25.641325 [debug] [ThreadPool]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:41:25.689484 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:41:25.709967 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev_gold: ROLLBACK
+[0m17:41:25.712402 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev_gold: Close
+[0m17:41:25.716597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fbd486a6-6b3e-4694-adb4-a1e0942cbd8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x778bb79c3b00>]}
+[0m17:41:25.717585 [debug] [MainThread]: On master: COMMIT
+[0m17:41:25.722692 [debug] [Thread-1 (]: Began running node model.dbt_weather.mart_weather_daily
+[0m17:41:25.726257 [info ] [Thread-1 (]: 1 of 2 START sql table model dbt_dev_gold.mart_weather_daily ................... [RUN]
+[0m17:41:25.729586 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_free-sql-db-5344531_dbt_dev_gold, now model.dbt_weather.mart_weather_daily)
+[0m17:41:25.732228 [debug] [Thread-1 (]: Began compiling node model.dbt_weather.mart_weather_daily
+[0m17:41:25.744808 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_weather.mart_weather_daily"
+[0m17:41:25.745577 [debug] [Thread-1 (]: Began executing node model.dbt_weather.mart_weather_daily
+[0m17:41:25.786718 [debug] [Thread-1 (]: dbt-sqlserver
+[0m17:41:25.796449 [debug] [Thread-1 (]: Applying DROP to: "free-sql-db-5344531"."dbt_dev_gold"."mart_weather_daily__dbt_tmp__dbt_tmp_vw"
+[0m17:41:25.805163 [debug] [Thread-1 (]: dbt-sqlserver
+[0m17:41:25.805791 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_weather.mart_weather_daily"
+[0m17:41:25.806333 [debug] [Thread-1 (]: On model.dbt_weather.mart_weather_daily: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_weather_daily"} */
+
+        USE [free-sql-db-5344531];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs
+        inner join sys.objects obj
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'free-sql-db-5344531'
+        and refs.referenced_schema_name = 'dbt_dev_gold'
+        and refs.referenced_entity_name = 'mart_weather_daily__dbt_tmp__dbt_tmp_vw'
+        and refs.referencing_class = 1
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-sqlserver');
+
+      
+[0m17:41:25.806843 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:41:25.807357 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:41:25.807868 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:41:25.839646 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:41:25.841755 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_weather.mart_weather_daily"
+[0m17:41:25.842435 [debug] [Thread-1 (]: On model.dbt_weather.mart_weather_daily: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_weather_daily"} */
+
+      
+      
+    
+    USE [free-sql-db-5344531];
+    EXEC('DROP view IF EXISTS "dbt_dev_gold"."mart_weather_daily__dbt_tmp__dbt_tmp_vw";');
+
+[0m17:41:25.863823 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:41:25.880550 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_weather.mart_weather_daily"
+[0m17:41:25.881667 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_weather.mart_weather_daily"
+[0m17:41:25.882355 [debug] [Thread-1 (]: On model.dbt_weather.mart_weather_daily: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_weather_daily"} */
+
+  
+    USE [free-sql-db-5344531];
+    USE [free-sql-db-5344531];
+    
+    
+
+    
+
+    
+    USE [free-sql-db-5344531];
+    EXEC('
+        create view "dbt_dev_gold"."mart_weather_daily__dbt_tmp__dbt_tmp_vw" as 
+
+SELECT
+    location_name,
+    observation_dt,
+    ROUND(AVG(temperature_c), 1)        AS temp_avg_c,
+    ROUND(MIN(temperature_c), 1)        AS temp_min_c,
+    ROUND(MAX(temperature_c), 1)        AS temp_max_c,
+    ROUND(AVG(apparent_temp_c), 1)      AS feels_like_avg_c,
+    ROUND(SUM(precipitation_mm), 2)     AS total_precip_mm,
+    ROUND(SUM(rain_mm), 2)              AS total_rain_mm,
+    ROUND(SUM(snowfall_cm), 2)          AS total_snow_cm,
+    ROUND(AVG(windspeed_kmh), 1)        AS wind_avg_kmh,
+    ROUND(MAX(windgusts_kmh), 1)        AS wind_max_gust_kmh,
+    ROUND(AVG(cloudcover_pct), 1)       AS cloud_avg_pct,
+    ROUND(AVG(humidity_pct), 1)         AS humidity_avg_pct,
+    CASE WHEN SUM(precipitation_mm) > 1 THEN 1 ELSE 0 END AS is_rain_day,
+    CASE WHEN MIN(temperature_c) < 0    THEN 1 ELSE 0 END AS is_frost_day,
+    CASE WHEN SUM(snowfall_cm) > 0      THEN 1 ELSE 0 END AS is_snow_day,
+    COUNT(*) AS hours_with_data
+FROM "free-sql-db-5344531"."dbt_dev_silver"."stg_weather_hourly"
+GROUP BY location_name, observation_dt
+HAVING COUNT(*) >= 20;
+    ')
+
+EXEC('
+            SELECT * INTO "free-sql-db-5344531"."dbt_dev_gold"."mart_weather_daily__dbt_tmp" FROM "free-sql-db-5344531"."dbt_dev_gold"."mart_weather_daily__dbt_tmp__dbt_tmp_vw" 
+    OPTION (LABEL = ''dbt-sqlserver'');
+
+        ')
+
+    
+    EXEC('DROP VIEW IF EXISTS dbt_dev_gold.mart_weather_daily__dbt_tmp__dbt_tmp_vw')
+
+
+
+    
+    use [free-sql-db-5344531];
+    if EXISTS (
+        SELECT *
+        FROM sys.indexes with (nolock)
+        WHERE name = 'dbt_dev_gold_mart_weather_daily__dbt_tmp_cci'
+        AND object_id=object_id('dbt_dev_gold_mart_weather_daily__dbt_tmp')
+    )
+    DROP index "dbt_dev_gold"."mart_weather_daily__dbt_tmp".dbt_dev_gold_mart_weather_daily__dbt_tmp_cci
+    CREATE CLUSTERED COLUMNSTORE INDEX dbt_dev_gold_mart_weather_daily__dbt_tmp_cci
+    ON "dbt_dev_gold"."mart_weather_daily__dbt_tmp"
+
+   
+
+
+  
+[0m17:41:25.963274 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:41:25.970293 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_weather.mart_weather_daily"
+[0m17:41:25.970858 [debug] [Thread-1 (]: On model.dbt_weather.mart_weather_daily: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_weather_daily"} */
+USE [free-sql-db-5344531];
+      EXEC sp_rename 'dbt_dev_gold.mart_weather_daily__dbt_tmp', 'mart_weather_daily'
+[0m17:41:26.278490 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:41:26.296891 [debug] [Thread-1 (]: On model.dbt_weather.mart_weather_daily: COMMIT
+[0m17:41:26.299825 [debug] [Thread-1 (]: Applying DROP to: "free-sql-db-5344531"."dbt_dev_gold"."mart_weather_daily__dbt_backup"
+[0m17:41:26.301104 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_weather.mart_weather_daily"
+[0m17:41:26.301610 [debug] [Thread-1 (]: On model.dbt_weather.mart_weather_daily: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_weather_daily"} */
+
+      
+    USE [free-sql-db-5344531];
+    EXEC('DROP table IF EXISTS "dbt_dev_gold"."mart_weather_daily__dbt_backup";');
+
+[0m17:41:26.323093 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:41:26.325768 [debug] [Thread-1 (]: On model.dbt_weather.mart_weather_daily: Close
+[0m17:41:26.327530 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fbd486a6-6b3e-4694-adb4-a1e0942cbd8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x778bbbab95b0>]}
+[0m17:41:26.328333 [info ] [Thread-1 (]: 1 of 2 OK created sql table model dbt_dev_gold.mart_weather_daily .............. [[32mOK[0m in 0.60s]
+[0m17:41:26.329187 [debug] [Thread-1 (]: Finished running node model.dbt_weather.mart_weather_daily
+[0m17:41:26.330201 [debug] [Thread-1 (]: Began running node model.dbt_weather.mart_weather_monthly
+[0m17:41:26.330806 [info ] [Thread-1 (]: 2 of 2 START sql table model dbt_dev_gold.mart_weather_monthly ................. [RUN]
+[0m17:41:26.331443 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_weather.mart_weather_daily, now model.dbt_weather.mart_weather_monthly)
+[0m17:41:26.331937 [debug] [Thread-1 (]: Began compiling node model.dbt_weather.mart_weather_monthly
+[0m17:41:26.335815 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_weather.mart_weather_monthly"
+[0m17:41:26.336835 [debug] [Thread-1 (]: Began executing node model.dbt_weather.mart_weather_monthly
+[0m17:41:26.341158 [debug] [Thread-1 (]: dbt-sqlserver
+[0m17:41:26.343809 [debug] [Thread-1 (]: Applying DROP to: "free-sql-db-5344531"."dbt_dev_gold"."mart_weather_monthly__dbt_tmp__dbt_tmp_vw"
+[0m17:41:26.345009 [debug] [Thread-1 (]: dbt-sqlserver
+[0m17:41:26.345588 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_weather.mart_weather_monthly"
+[0m17:41:26.346114 [debug] [Thread-1 (]: On model.dbt_weather.mart_weather_monthly: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_weather_monthly"} */
+
+        USE [free-sql-db-5344531];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs
+        inner join sys.objects obj
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'free-sql-db-5344531'
+        and refs.referenced_schema_name = 'dbt_dev_gold'
+        and refs.referenced_entity_name = 'mart_weather_monthly__dbt_tmp__dbt_tmp_vw'
+        and refs.referencing_class = 1
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-sqlserver');
+
+      
+[0m17:41:26.346600 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:41:26.347092 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:41:26.347605 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:41:26.380725 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:41:26.382848 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_weather.mart_weather_monthly"
+[0m17:41:26.383513 [debug] [Thread-1 (]: On model.dbt_weather.mart_weather_monthly: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_weather_monthly"} */
+
+      
+      
+    
+    USE [free-sql-db-5344531];
+    EXEC('DROP view IF EXISTS "dbt_dev_gold"."mart_weather_monthly__dbt_tmp__dbt_tmp_vw";');
+
+[0m17:41:26.407349 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:41:26.410836 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_weather.mart_weather_monthly"
+[0m17:41:26.411604 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_weather.mart_weather_monthly"
+[0m17:41:26.412189 [debug] [Thread-1 (]: On model.dbt_weather.mart_weather_monthly: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_weather_monthly"} */
+
+  
+    USE [free-sql-db-5344531];
+    USE [free-sql-db-5344531];
+    
+    
+
+    
+
+    
+    USE [free-sql-db-5344531];
+    EXEC('
+        create view "dbt_dev_gold"."mart_weather_monthly__dbt_tmp__dbt_tmp_vw" as 
+
+SELECT
+    location_name,
+    YEAR(observation_dt)               AS year,
+    MONTH(observation_dt)              AS month,
+    FORMAT(observation_dt, "yyyy-MM") AS year_month,
+    COUNT(*)                           AS days_with_data,
+    ROUND(AVG(temp_avg_c), 1)          AS monthly_avg_temp_c,
+    ROUND(MIN(temp_min_c), 1)          AS monthly_min_temp_c,
+    ROUND(MAX(temp_max_c), 1)          AS monthly_max_temp_c,
+    ROUND(SUM(total_precip_mm), 1)     AS total_precip_mm,
+    SUM(is_rain_day)                   AS rain_days,
+    SUM(is_frost_day)                  AS frost_days,
+    SUM(is_snow_day)                   AS snow_days,
+    ROUND(AVG(wind_avg_kmh), 1)        AS avg_wind_kmh,
+    ROUND(MAX(wind_max_gust_kmh), 1)   AS max_gust_kmh,
+    ROUND(AVG(cloud_avg_pct), 1)       AS avg_cloudcover_pct
+FROM "free-sql-db-5344531"."dbt_dev_gold"."mart_weather_daily"
+GROUP BY location_name, YEAR(observation_dt), MONTH(observation_dt), FORMAT(observation_dt, "yyyy-MM");
+    ')
+
+EXEC('
+            SELECT * INTO "free-sql-db-5344531"."dbt_dev_gold"."mart_weather_monthly__dbt_tmp" FROM "free-sql-db-5344531"."dbt_dev_gold"."mart_weather_monthly__dbt_tmp__dbt_tmp_vw" 
+    OPTION (LABEL = ''dbt-sqlserver'');
+
+        ')
+
+    
+    EXEC('DROP VIEW IF EXISTS dbt_dev_gold.mart_weather_monthly__dbt_tmp__dbt_tmp_vw')
+
+
+
+    
+    use [free-sql-db-5344531];
+    if EXISTS (
+        SELECT *
+        FROM sys.indexes with (nolock)
+        WHERE name = 'dbt_dev_gold_mart_weather_monthly__dbt_tmp_cci'
+        AND object_id=object_id('dbt_dev_gold_mart_weather_monthly__dbt_tmp')
+    )
+    DROP index "dbt_dev_gold"."mart_weather_monthly__dbt_tmp".dbt_dev_gold_mart_weather_monthly__dbt_tmp_cci
+    CREATE CLUSTERED COLUMNSTORE INDEX dbt_dev_gold_mart_weather_monthly__dbt_tmp_cci
+    ON "dbt_dev_gold"."mart_weather_monthly__dbt_tmp"
+
+   
+
+
+  
+[0m17:41:26.439357 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:41:26.440702 [debug] [Thread-1 (]: On model.dbt_weather.mart_weather_monthly: ROLLBACK
+[0m17:41:26.441251 [debug] [Thread-1 (]: On model.dbt_weather.mart_weather_monthly: Close
+[0m17:41:26.441889 [error] [Thread-1 (]: [31mUnhandled error while executing target/run/dbt_weather/models/gold/mart_weather_monthly.sql[0m
+('42S22', "[42S22] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid column name 'yyyy-MM'. (207) (SQLMoreResults)")
+[0m17:41:26.446375 [debug] [Thread-1 (]: Traceback (most recent call last):
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/task/base.py", line 363, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/task/base.py", line 310, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/task/base.py", line 410, in run
+    return self.execute(compiled_node, manifest)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/task/run.py", line 347, in execute
+    return self._execute_model(hook_ctx, context_config, model, context, materialization_macro)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/task/run.py", line 307, in _execute_model
+    result = MacroGenerator(
+             ^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/clients/jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "<template>", line 82, in macro
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/clients/jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "<template>", line 52, in macro
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt_common/record.py", line 538, in record_replay_wrapper
+    return func_to_record(*call_args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/adapters/base/impl.py", line 471, in execute
+    return self.connections.execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/adapters/fabric/fabric_connection_manager.py", line 568, in execute
+    while cursor.nextset():
+          ^^^^^^^^^^^^^^^^
+pyodbc.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid column name 'yyyy-MM'. (207) (SQLMoreResults)")
+
+[0m17:41:26.447163 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fbd486a6-6b3e-4694-adb4-a1e0942cbd8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x778bb6eed130>]}
+[0m17:41:26.448026 [error] [Thread-1 (]: 2 of 2 ERROR creating sql table model dbt_dev_gold.mart_weather_monthly ........ [[31mERROR[0m in 0.12s]
+[0m17:41:26.448870 [debug] [Thread-1 (]: Finished running node model.dbt_weather.mart_weather_monthly
+[0m17:41:26.449754 [debug] [Thread-4 (]: Marking all children of 'model.dbt_weather.mart_weather_monthly' to be skipped because of status 'error'.  Reason: ('42S22', "[42S22] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid column name 'yyyy-MM'. (207) (SQLMoreResults)").
+[0m17:41:26.452216 [debug] [MainThread]: On master: COMMIT
+[0m17:41:26.452809 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:41:26.453250 [debug] [MainThread]: Connection 'model.dbt_weather.mart_weather_monthly' was properly closed.
+[0m17:41:26.453908 [info ] [MainThread]: 
+[0m17:41:26.454534 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 1.35 seconds (1.35s).
+[0m17:41:26.455858 [debug] [MainThread]: Command end result
+[0m17:41:26.486210 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/weather-project/dbt_weather/target/manifest.json
+[0m17:41:26.489478 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/weather-project/dbt_weather/target/semantic_manifest.json
+[0m17:41:26.495251 [debug] [MainThread]: Wrote artifact RunExecutionResult to /workspaces/weather-project/dbt_weather/target/run_results.json
+[0m17:41:26.495711 [info ] [MainThread]: 
+[0m17:41:26.496345 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m17:41:26.496864 [info ] [MainThread]: 
+[0m17:41:26.497464 [error] [MainThread]: [31mFailure in model mart_weather_monthly (models/gold/mart_weather_monthly.sql)[0m
+[0m17:41:26.498151 [error] [MainThread]:   ('42S22', "[42S22] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid column name 'yyyy-MM'. (207) (SQLMoreResults)")
+[0m17:41:26.498624 [info ] [MainThread]: 
+[0m17:41:26.499186 [info ] [MainThread]:   compiled code at target/compiled/dbt_weather/models/gold/mart_weather_monthly.sql
+[0m17:41:26.499654 [info ] [MainThread]: 
+[0m17:41:26.500185 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=2
+[0m17:41:26.501267 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.550837, "process_in_blocks": "504", "process_kernel_time": 0.276064, "process_mem_max_rss": "155192", "process_out_blocks": "3800", "process_user_time": 3.967184}
+[0m17:41:26.502135 [debug] [MainThread]: Command `dbt run` failed at 17:41:26.501999 after 2.55 seconds
+[0m17:41:26.502625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x778bb93c59d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x778bba01cef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x778bba01c410>]}
+[0m17:41:26.503305 [debug] [MainThread]: Flushing usage events
+[0m17:41:26.840992 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:41:58.616517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabde674590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabddf81010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabde3bdc40>]}
+
+
+============================== 17:41:58.623194 | 758c4af5-06d4-48c3-b4c8-847c7b7d27d5 ==============================
+[0m17:41:58.623194 [info ] [MainThread]: Running with dbt=1.11.7
+[0m17:41:58.624376 [debug] [MainThread]: running dbt with arguments {'log_path': '/workspaces/weather-project/dbt_weather/logs', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'warn_error': 'None', 'debug': 'False', 'cache_selected_only': 'False', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'write_json': 'True', 'invocation_command': 'dbt run --select gold', 'fail_fast': 'False', 'profiles_dir': '/home/codespace/.dbt', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'log_cache_events': 'False', 'use_colors': 'True', 'no_print': 'None', 'static_parser': 'True', 'printer_width': '80', 'partial_parse': 'True'}
+[0m17:41:58.959786 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '758c4af5-06d4-48c3-b4c8-847c7b7d27d5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabde11f8c0>]}
+[0m17:41:59.027215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '758c4af5-06d4-48c3-b4c8-847c7b7d27d5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabdc63e030>]}
+[0m17:41:59.028100 [info ] [MainThread]: Registered adapter: sqlserver=1.9.0
+[0m17:41:59.152588 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m17:41:59.262557 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m17:41:59.263369 [debug] [MainThread]: Partial parsing: updated file: dbt_weather://models/gold/mart_weather_monthly.sql
+[0m17:41:59.630758 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '758c4af5-06d4-48c3-b4c8-847c7b7d27d5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabdc151850>]}
+[0m17:41:59.715588 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/weather-project/dbt_weather/target/manifest.json
+[0m17:41:59.717686 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/weather-project/dbt_weather/target/semantic_manifest.json
+[0m17:41:59.731181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '758c4af5-06d4-48c3-b4c8-847c7b7d27d5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabdc267200>]}
+[0m17:41:59.731807 [info ] [MainThread]: Found 5 models, 7 data tests, 1 source, 539 macros
+[0m17:41:59.732453 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '758c4af5-06d4-48c3-b4c8-847c7b7d27d5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabdc709c10>]}
+[0m17:41:59.734309 [info ] [MainThread]: 
+[0m17:41:59.734875 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:41:59.735400 [info ] [MainThread]: 
+[0m17:41:59.736122 [debug] [MainThread]: Acquiring new sqlserver connection 'master'
+[0m17:41:59.742750 [debug] [ThreadPool]: Acquiring new sqlserver connection 'list_free-sql-db-5344531'
+[0m17:41:59.758659 [debug] [ThreadPool]: dbt-sqlserver
+[0m17:41:59.759773 [debug] [ThreadPool]: Using sqlserver connection "list_free-sql-db-5344531"
+[0m17:41:59.760590 [debug] [ThreadPool]: On list_free-sql-db-5344531: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "connection_name": "list_free-sql-db-5344531"} */
+USE [free-sql-db-5344531];
+    select  name as [schema]
+    from sys.schemas with (nolock) 
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m17:41:59.761102 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:41:59.761594 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:42:00.139782 [debug] [ThreadPool]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:42:00.161246 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:42:00.162947 [debug] [ThreadPool]: On list_free-sql-db-5344531: Close
+[0m17:42:00.164605 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_free-sql-db-5344531, now list_free-sql-db-5344531_dbt_dev_silver)
+[0m17:42:00.172123 [debug] [ThreadPool]: dbt-sqlserver
+[0m17:42:00.172659 [debug] [ThreadPool]: Using sqlserver connection "list_free-sql-db-5344531_dbt_dev_silver"
+[0m17:42:00.173147 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev_silver: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "connection_name": "list_free-sql-db-5344531_dbt_dev_silver"} */
+USE [free-sql-db-5344531];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t with (nolock)
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v with (nolock)
+    )
+    select * from base
+    where [schema] like 'dbt_dev_silver'
+    
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m17:42:00.173569 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:42:00.174035 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:42:00.174536 [debug] [ThreadPool]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:42:00.197845 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:42:00.199572 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev_silver: ROLLBACK
+[0m17:42:00.200317 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev_silver: Close
+[0m17:42:00.201295 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_free-sql-db-5344531_dbt_dev_silver, now list_free-sql-db-5344531_dbt_dev)
+[0m17:42:00.204861 [debug] [ThreadPool]: dbt-sqlserver
+[0m17:42:00.205452 [debug] [ThreadPool]: Using sqlserver connection "list_free-sql-db-5344531_dbt_dev"
+[0m17:42:00.205900 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "connection_name": "list_free-sql-db-5344531_dbt_dev"} */
+USE [free-sql-db-5344531];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t with (nolock)
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v with (nolock)
+    )
+    select * from base
+    where [schema] like 'dbt_dev'
+    
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m17:42:00.206369 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:42:00.206832 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:42:00.207329 [debug] [ThreadPool]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:42:00.230272 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:42:00.231804 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev: ROLLBACK
+[0m17:42:00.232283 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev: Close
+[0m17:42:00.232955 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_free-sql-db-5344531_dbt_dev, now list_free-sql-db-5344531_dbt_dev_gold)
+[0m17:42:00.235839 [debug] [ThreadPool]: dbt-sqlserver
+[0m17:42:00.236356 [debug] [ThreadPool]: Using sqlserver connection "list_free-sql-db-5344531_dbt_dev_gold"
+[0m17:42:00.236836 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev_gold: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "connection_name": "list_free-sql-db-5344531_dbt_dev_gold"} */
+USE [free-sql-db-5344531];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t with (nolock)
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v with (nolock)
+    )
+    select * from base
+    where [schema] like 'dbt_dev_gold'
+    
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m17:42:00.237275 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:42:00.237739 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:42:00.238222 [debug] [ThreadPool]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:42:00.261983 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:42:00.263622 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev_gold: ROLLBACK
+[0m17:42:00.264104 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev_gold: Close
+[0m17:42:00.265135 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '758c4af5-06d4-48c3-b4c8-847c7b7d27d5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabdc235460>]}
+[0m17:42:00.265802 [debug] [MainThread]: On master: COMMIT
+[0m17:42:00.267990 [debug] [Thread-1 (]: Began running node model.dbt_weather.mart_weather_daily
+[0m17:42:00.268670 [info ] [Thread-1 (]: 1 of 2 START sql table model dbt_dev_gold.mart_weather_daily ................... [RUN]
+[0m17:42:00.269385 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_free-sql-db-5344531_dbt_dev_gold, now model.dbt_weather.mart_weather_daily)
+[0m17:42:00.269918 [debug] [Thread-1 (]: Began compiling node model.dbt_weather.mart_weather_daily
+[0m17:42:00.279031 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_weather.mart_weather_daily"
+[0m17:42:00.279869 [debug] [Thread-1 (]: Began executing node model.dbt_weather.mart_weather_daily
+[0m17:42:00.331453 [debug] [Thread-1 (]: dbt-sqlserver
+[0m17:42:00.340958 [debug] [Thread-1 (]: Applying DROP to: "free-sql-db-5344531"."dbt_dev_gold"."mart_weather_daily__dbt_tmp__dbt_tmp_vw"
+[0m17:42:00.347737 [debug] [Thread-1 (]: dbt-sqlserver
+[0m17:42:00.348501 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_weather.mart_weather_daily"
+[0m17:42:00.349352 [debug] [Thread-1 (]: On model.dbt_weather.mart_weather_daily: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_weather_daily"} */
+
+        USE [free-sql-db-5344531];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs
+        inner join sys.objects obj
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'free-sql-db-5344531'
+        and refs.referenced_schema_name = 'dbt_dev_gold'
+        and refs.referenced_entity_name = 'mart_weather_daily__dbt_tmp__dbt_tmp_vw'
+        and refs.referencing_class = 1
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-sqlserver');
+
+      
+[0m17:42:00.350175 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:42:00.350917 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:42:00.351509 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:42:00.373273 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:42:00.378842 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_weather.mart_weather_daily"
+[0m17:42:00.379958 [debug] [Thread-1 (]: On model.dbt_weather.mart_weather_daily: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_weather_daily"} */
+
+      
+      
+    
+    USE [free-sql-db-5344531];
+    EXEC('DROP view IF EXISTS "dbt_dev_gold"."mart_weather_daily__dbt_tmp__dbt_tmp_vw";');
+
+[0m17:42:00.401902 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:42:00.419195 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_weather.mart_weather_daily"
+[0m17:42:00.420527 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_weather.mart_weather_daily"
+[0m17:42:00.421451 [debug] [Thread-1 (]: On model.dbt_weather.mart_weather_daily: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_weather_daily"} */
+
+  
+    USE [free-sql-db-5344531];
+    USE [free-sql-db-5344531];
+    
+    
+
+    
+
+    
+    USE [free-sql-db-5344531];
+    EXEC('
+        create view "dbt_dev_gold"."mart_weather_daily__dbt_tmp__dbt_tmp_vw" as 
+
+SELECT
+    location_name,
+    observation_dt,
+    ROUND(AVG(temperature_c), 1)        AS temp_avg_c,
+    ROUND(MIN(temperature_c), 1)        AS temp_min_c,
+    ROUND(MAX(temperature_c), 1)        AS temp_max_c,
+    ROUND(AVG(apparent_temp_c), 1)      AS feels_like_avg_c,
+    ROUND(SUM(precipitation_mm), 2)     AS total_precip_mm,
+    ROUND(SUM(rain_mm), 2)              AS total_rain_mm,
+    ROUND(SUM(snowfall_cm), 2)          AS total_snow_cm,
+    ROUND(AVG(windspeed_kmh), 1)        AS wind_avg_kmh,
+    ROUND(MAX(windgusts_kmh), 1)        AS wind_max_gust_kmh,
+    ROUND(AVG(cloudcover_pct), 1)       AS cloud_avg_pct,
+    ROUND(AVG(humidity_pct), 1)         AS humidity_avg_pct,
+    CASE WHEN SUM(precipitation_mm) > 1 THEN 1 ELSE 0 END AS is_rain_day,
+    CASE WHEN MIN(temperature_c) < 0    THEN 1 ELSE 0 END AS is_frost_day,
+    CASE WHEN SUM(snowfall_cm) > 0      THEN 1 ELSE 0 END AS is_snow_day,
+    COUNT(*) AS hours_with_data
+FROM "free-sql-db-5344531"."dbt_dev_silver"."stg_weather_hourly"
+GROUP BY location_name, observation_dt
+HAVING COUNT(*) >= 20;
+    ')
+
+EXEC('
+            SELECT * INTO "free-sql-db-5344531"."dbt_dev_gold"."mart_weather_daily__dbt_tmp" FROM "free-sql-db-5344531"."dbt_dev_gold"."mart_weather_daily__dbt_tmp__dbt_tmp_vw" 
+    OPTION (LABEL = ''dbt-sqlserver'');
+
+        ')
+
+    
+    EXEC('DROP VIEW IF EXISTS dbt_dev_gold.mart_weather_daily__dbt_tmp__dbt_tmp_vw')
+
+
+
+    
+    use [free-sql-db-5344531];
+    if EXISTS (
+        SELECT *
+        FROM sys.indexes with (nolock)
+        WHERE name = 'dbt_dev_gold_mart_weather_daily__dbt_tmp_cci'
+        AND object_id=object_id('dbt_dev_gold_mart_weather_daily__dbt_tmp')
+    )
+    DROP index "dbt_dev_gold"."mart_weather_daily__dbt_tmp".dbt_dev_gold_mart_weather_daily__dbt_tmp_cci
+    CREATE CLUSTERED COLUMNSTORE INDEX dbt_dev_gold_mart_weather_daily__dbt_tmp_cci
+    ON "dbt_dev_gold"."mart_weather_daily__dbt_tmp"
+
+   
+
+
+  
+[0m17:42:00.494130 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:42:00.506561 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_weather.mart_weather_daily"
+[0m17:42:00.507460 [debug] [Thread-1 (]: On model.dbt_weather.mart_weather_daily: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_weather_daily"} */
+USE [free-sql-db-5344531];
+      EXEC sp_rename 'dbt_dev_gold.mart_weather_daily', 'mart_weather_daily__dbt_backup'
+[0m17:42:00.533642 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:42:00.538811 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_weather.mart_weather_daily"
+[0m17:42:00.539390 [debug] [Thread-1 (]: On model.dbt_weather.mart_weather_daily: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_weather_daily"} */
+USE [free-sql-db-5344531];
+      EXEC sp_rename 'dbt_dev_gold.mart_weather_daily__dbt_tmp', 'mart_weather_daily'
+[0m17:42:00.564812 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:42:00.586487 [debug] [Thread-1 (]: On model.dbt_weather.mart_weather_daily: COMMIT
+[0m17:42:00.589552 [debug] [Thread-1 (]: Applying DROP to: "free-sql-db-5344531"."dbt_dev_gold"."mart_weather_daily__dbt_backup"
+[0m17:42:00.590867 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_weather.mart_weather_daily"
+[0m17:42:00.591451 [debug] [Thread-1 (]: On model.dbt_weather.mart_weather_daily: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_weather_daily"} */
+
+      
+    USE [free-sql-db-5344531];
+    EXEC('DROP table IF EXISTS "dbt_dev_gold"."mart_weather_daily__dbt_backup";');
+
+[0m17:42:00.617243 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:42:00.619834 [debug] [Thread-1 (]: On model.dbt_weather.mart_weather_daily: Close
+[0m17:42:00.621620 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '758c4af5-06d4-48c3-b4c8-847c7b7d27d5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabdef3e240>]}
+[0m17:42:00.622410 [info ] [Thread-1 (]: 1 of 2 OK created sql table model dbt_dev_gold.mart_weather_daily .............. [[32mOK[0m in 0.35s]
+[0m17:42:00.623288 [debug] [Thread-1 (]: Finished running node model.dbt_weather.mart_weather_daily
+[0m17:42:00.624205 [debug] [Thread-1 (]: Began running node model.dbt_weather.mart_weather_monthly
+[0m17:42:00.624864 [info ] [Thread-1 (]: 2 of 2 START sql table model dbt_dev_gold.mart_weather_monthly ................. [RUN]
+[0m17:42:00.625518 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_weather.mart_weather_daily, now model.dbt_weather.mart_weather_monthly)
+[0m17:42:00.626012 [debug] [Thread-1 (]: Began compiling node model.dbt_weather.mart_weather_monthly
+[0m17:42:00.629881 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_weather.mart_weather_monthly"
+[0m17:42:00.631060 [debug] [Thread-1 (]: Began executing node model.dbt_weather.mart_weather_monthly
+[0m17:42:00.634958 [debug] [Thread-1 (]: dbt-sqlserver
+[0m17:42:00.637707 [debug] [Thread-1 (]: Applying DROP to: "free-sql-db-5344531"."dbt_dev_gold"."mart_weather_monthly__dbt_tmp__dbt_tmp_vw"
+[0m17:42:00.638998 [debug] [Thread-1 (]: dbt-sqlserver
+[0m17:42:00.639611 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_weather.mart_weather_monthly"
+[0m17:42:00.640144 [debug] [Thread-1 (]: On model.dbt_weather.mart_weather_monthly: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_weather_monthly"} */
+
+        USE [free-sql-db-5344531];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs
+        inner join sys.objects obj
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'free-sql-db-5344531'
+        and refs.referenced_schema_name = 'dbt_dev_gold'
+        and refs.referenced_entity_name = 'mart_weather_monthly__dbt_tmp__dbt_tmp_vw'
+        and refs.referencing_class = 1
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-sqlserver');
+
+      
+[0m17:42:00.640646 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:42:00.641153 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:42:00.641664 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:42:00.662958 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:42:00.664951 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_weather.mart_weather_monthly"
+[0m17:42:00.665579 [debug] [Thread-1 (]: On model.dbt_weather.mart_weather_monthly: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_weather_monthly"} */
+
+      
+      
+    
+    USE [free-sql-db-5344531];
+    EXEC('DROP view IF EXISTS "dbt_dev_gold"."mart_weather_monthly__dbt_tmp__dbt_tmp_vw";');
+
+[0m17:42:00.687021 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:42:00.690187 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_weather.mart_weather_monthly"
+[0m17:42:00.690969 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_weather.mart_weather_monthly"
+[0m17:42:00.691595 [debug] [Thread-1 (]: On model.dbt_weather.mart_weather_monthly: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_weather_monthly"} */
+
+  
+    USE [free-sql-db-5344531];
+    USE [free-sql-db-5344531];
+    
+    
+
+    
+
+    
+    USE [free-sql-db-5344531];
+    EXEC('
+        create view "dbt_dev_gold"."mart_weather_monthly__dbt_tmp__dbt_tmp_vw" as 
+
+SELECT
+    location_name,
+    YEAR(observation_dt)                    AS year,
+    MONTH(observation_dt)                   AS month,
+    CAST(YEAR(observation_dt) AS VARCHAR) + ''-'' + RIGHT(''0'' + CAST(MONTH(observation_dt) AS VARCHAR), 2) AS year_month,
+    COUNT(*)                                AS days_with_data,
+    ROUND(AVG(temp_avg_c), 1)              AS monthly_avg_temp_c,
+    ROUND(MIN(temp_min_c), 1)              AS monthly_min_temp_c,
+    ROUND(MAX(temp_max_c), 1)              AS monthly_max_temp_c,
+    ROUND(SUM(total_precip_mm), 1)         AS total_precip_mm,
+    SUM(is_rain_day)                        AS rain_days,
+    SUM(is_frost_day)                       AS frost_days,
+    SUM(is_snow_day)                        AS snow_days,
+    ROUND(AVG(wind_avg_kmh), 1)            AS avg_wind_kmh,
+    ROUND(MAX(wind_max_gust_kmh), 1)       AS max_gust_kmh,
+    ROUND(AVG(cloud_avg_pct), 1)           AS avg_cloudcover_pct
+FROM "free-sql-db-5344531"."dbt_dev_gold"."mart_weather_daily"
+GROUP BY
+    location_name,
+    YEAR(observation_dt),
+    MONTH(observation_dt);
+    ')
+
+EXEC('
+            SELECT * INTO "free-sql-db-5344531"."dbt_dev_gold"."mart_weather_monthly__dbt_tmp" FROM "free-sql-db-5344531"."dbt_dev_gold"."mart_weather_monthly__dbt_tmp__dbt_tmp_vw" 
+    OPTION (LABEL = ''dbt-sqlserver'');
+
+        ')
+
+    
+    EXEC('DROP VIEW IF EXISTS dbt_dev_gold.mart_weather_monthly__dbt_tmp__dbt_tmp_vw')
+
+
+
+    
+    use [free-sql-db-5344531];
+    if EXISTS (
+        SELECT *
+        FROM sys.indexes with (nolock)
+        WHERE name = 'dbt_dev_gold_mart_weather_monthly__dbt_tmp_cci'
+        AND object_id=object_id('dbt_dev_gold_mart_weather_monthly__dbt_tmp')
+    )
+    DROP index "dbt_dev_gold"."mart_weather_monthly__dbt_tmp".dbt_dev_gold_mart_weather_monthly__dbt_tmp_cci
+    CREATE CLUSTERED COLUMNSTORE INDEX dbt_dev_gold_mart_weather_monthly__dbt_tmp_cci
+    ON "dbt_dev_gold"."mart_weather_monthly__dbt_tmp"
+
+   
+
+
+  
+[0m17:42:00.764605 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:42:00.768518 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_weather.mart_weather_monthly"
+[0m17:42:00.769058 [debug] [Thread-1 (]: On model.dbt_weather.mart_weather_monthly: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_weather_monthly"} */
+USE [free-sql-db-5344531];
+      EXEC sp_rename 'dbt_dev_gold.mart_weather_monthly__dbt_tmp', 'mart_weather_monthly'
+[0m17:42:00.795081 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:42:00.797459 [debug] [Thread-1 (]: On model.dbt_weather.mart_weather_monthly: COMMIT
+[0m17:42:00.800300 [debug] [Thread-1 (]: Applying DROP to: "free-sql-db-5344531"."dbt_dev_gold"."mart_weather_monthly__dbt_backup"
+[0m17:42:00.801537 [debug] [Thread-1 (]: Using sqlserver connection "model.dbt_weather.mart_weather_monthly"
+[0m17:42:00.802061 [debug] [Thread-1 (]: On model.dbt_weather.mart_weather_monthly: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_weather_monthly"} */
+
+      
+    USE [free-sql-db-5344531];
+    EXEC('DROP table IF EXISTS "dbt_dev_gold"."mart_weather_monthly__dbt_backup";');
+
+[0m17:42:00.823315 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:42:00.824922 [debug] [Thread-1 (]: On model.dbt_weather.mart_weather_monthly: Close
+[0m17:42:00.825625 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '758c4af5-06d4-48c3-b4c8-847c7b7d27d5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabdbc85490>]}
+[0m17:42:00.826384 [info ] [Thread-1 (]: 2 of 2 OK created sql table model dbt_dev_gold.mart_weather_monthly ............ [[32mOK[0m in 0.20s]
+[0m17:42:00.827272 [debug] [Thread-1 (]: Finished running node model.dbt_weather.mart_weather_monthly
+[0m17:42:00.829018 [debug] [MainThread]: On master: COMMIT
+[0m17:42:00.829849 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:42:00.830517 [debug] [MainThread]: Connection 'model.dbt_weather.mart_weather_monthly' was properly closed.
+[0m17:42:00.831102 [info ] [MainThread]: 
+[0m17:42:00.831678 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 1.10 seconds (1.10s).
+[0m17:42:00.833215 [debug] [MainThread]: Command end result
+[0m17:42:00.861575 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/weather-project/dbt_weather/target/manifest.json
+[0m17:42:00.863896 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/weather-project/dbt_weather/target/semantic_manifest.json
+[0m17:42:00.871053 [debug] [MainThread]: Wrote artifact RunExecutionResult to /workspaces/weather-project/dbt_weather/target/run_results.json
+[0m17:42:00.871779 [info ] [MainThread]: 
+[0m17:42:00.872583 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:42:00.873319 [info ] [MainThread]: 
+[0m17:42:00.874104 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m17:42:00.875632 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.317912, "process_in_blocks": "0", "process_kernel_time": 0.279587, "process_mem_max_rss": "154640", "process_out_blocks": "3792", "process_user_time": 4.000787}
+[0m17:42:00.876766 [debug] [MainThread]: Command `dbt run` succeeded at 17:42:00.876612 after 2.32 seconds
+[0m17:42:00.877525 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabde74eb70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabe0b594c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cabdc3422d0>]}
+[0m17:42:00.878315 [debug] [MainThread]: Flushing usage events
+[0m17:42:01.231210 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:42:19.448315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x756f9e450f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x756f9e5544d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x756f9c1c67b0>]}
+
+
+============================== 17:42:19.455745 | 240146ea-d5c0-402d-97ca-cc92034c44e5 ==============================
+[0m17:42:19.455745 [info ] [MainThread]: Running with dbt=1.11.7
+[0m17:42:19.457106 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'log_path': '/workspaces/weather-project/dbt_weather/logs', 'profiles_dir': '/home/codespace/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'printer_width': '80', 'invocation_command': 'dbt test', 'target_path': 'None', 'log_format': 'default', 'cache_selected_only': 'False', 'static_parser': 'True', 'indirect_selection': 'eager', 'warn_error': 'None', 'log_cache_events': 'False', 'write_json': 'True', 'debug': 'False', 'introspect': 'True', 'partial_parse': 'True'}
+[0m17:42:19.751018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '240146ea-d5c0-402d-97ca-cc92034c44e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x756f9ab0b530>]}
+[0m17:42:19.817827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '240146ea-d5c0-402d-97ca-cc92034c44e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x756f9a1c9700>]}
+[0m17:42:19.818660 [info ] [MainThread]: Registered adapter: sqlserver=1.9.0
+[0m17:42:19.943527 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m17:42:20.055031 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:42:20.055610 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m17:42:20.056061 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:42:20.109750 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '240146ea-d5c0-402d-97ca-cc92034c44e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x756f9b71eed0>]}
+[0m17:42:20.287548 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/weather-project/dbt_weather/target/manifest.json
+[0m17:42:20.289603 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/weather-project/dbt_weather/target/semantic_manifest.json
+[0m17:42:20.311820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '240146ea-d5c0-402d-97ca-cc92034c44e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x756f9b8b3830>]}
+[0m17:42:20.312529 [info ] [MainThread]: Found 5 models, 7 data tests, 1 source, 539 macros
+[0m17:42:20.313188 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '240146ea-d5c0-402d-97ca-cc92034c44e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x756f99c12090>]}
+[0m17:42:20.315508 [info ] [MainThread]: 
+[0m17:42:20.316140 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:42:20.316680 [info ] [MainThread]: 
+[0m17:42:20.317412 [debug] [MainThread]: Acquiring new sqlserver connection 'master'
+[0m17:42:20.324203 [debug] [ThreadPool]: Acquiring new sqlserver connection 'list_free-sql-db-5344531_dbt_dev_gold'
+[0m17:42:20.341429 [debug] [ThreadPool]: dbt-sqlserver
+[0m17:42:20.342032 [debug] [ThreadPool]: Using sqlserver connection "list_free-sql-db-5344531_dbt_dev_gold"
+[0m17:42:20.342548 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev_gold: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "connection_name": "list_free-sql-db-5344531_dbt_dev_gold"} */
+USE [free-sql-db-5344531];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t with (nolock)
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v with (nolock)
+    )
+    select * from base
+    where [schema] like 'dbt_dev_gold'
+    
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m17:42:20.342993 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:42:20.343484 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:42:20.721491 [debug] [ThreadPool]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:42:20.745098 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:42:20.746884 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev_gold: ROLLBACK
+[0m17:42:20.747395 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev_gold: Close
+[0m17:42:20.748089 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_free-sql-db-5344531_dbt_dev_gold, now list_free-sql-db-5344531_dbt_dev)
+[0m17:42:20.751472 [debug] [ThreadPool]: dbt-sqlserver
+[0m17:42:20.751995 [debug] [ThreadPool]: Using sqlserver connection "list_free-sql-db-5344531_dbt_dev"
+[0m17:42:20.752493 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "connection_name": "list_free-sql-db-5344531_dbt_dev"} */
+USE [free-sql-db-5344531];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t with (nolock)
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v with (nolock)
+    )
+    select * from base
+    where [schema] like 'dbt_dev'
+    
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m17:42:20.752908 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:42:20.753387 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:42:20.753861 [debug] [ThreadPool]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:42:20.776839 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:42:20.778539 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev: ROLLBACK
+[0m17:42:20.779073 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev: Close
+[0m17:42:20.779728 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_free-sql-db-5344531_dbt_dev, now list_free-sql-db-5344531_dbt_dev_silver)
+[0m17:42:20.782620 [debug] [ThreadPool]: dbt-sqlserver
+[0m17:42:20.783142 [debug] [ThreadPool]: Using sqlserver connection "list_free-sql-db-5344531_dbt_dev_silver"
+[0m17:42:20.783618 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev_silver: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "connection_name": "list_free-sql-db-5344531_dbt_dev_silver"} */
+USE [free-sql-db-5344531];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t with (nolock)
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v with (nolock)
+    )
+    select * from base
+    where [schema] like 'dbt_dev_silver'
+    
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m17:42:20.784059 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:42:20.784529 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:42:20.784989 [debug] [ThreadPool]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:42:20.808095 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:42:20.809711 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev_silver: ROLLBACK
+[0m17:42:20.810194 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev_silver: Close
+[0m17:42:20.811262 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '240146ea-d5c0-402d-97ca-cc92034c44e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x756f9a03ba10>]}
+[0m17:42:20.811912 [debug] [MainThread]: On master: COMMIT
+[0m17:42:20.814222 [debug] [Thread-1 (]: Began running node test.dbt_weather.not_null_my_first_dbt_model_id.5fb22c2710
+[0m17:42:20.814819 [info ] [Thread-1 (]: 1 of 7 START test not_null_my_first_dbt_model_id ............................... [RUN]
+[0m17:42:20.815497 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_free-sql-db-5344531_dbt_dev_silver, now test.dbt_weather.not_null_my_first_dbt_model_id.5fb22c2710)
+[0m17:42:20.816020 [debug] [Thread-1 (]: Began compiling node test.dbt_weather.not_null_my_first_dbt_model_id.5fb22c2710
+[0m17:42:20.835198 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_weather.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m17:42:20.836148 [debug] [Thread-1 (]: Began executing node test.dbt_weather.not_null_my_first_dbt_model_id.5fb22c2710
+[0m17:42:20.861760 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_weather.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m17:42:20.862718 [debug] [Thread-1 (]: Using sqlserver connection "test.dbt_weather.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m17:42:20.863308 [debug] [Thread-1 (]: On test.dbt_weather.not_null_my_first_dbt_model_id.5fb22c2710: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "test.dbt_weather.not_null_my_first_dbt_model_id.5fb22c2710"} */
+
+    
+    -- Create target schema if it does not
+  USE [free-sql-db-5344531];
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbt_dev')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbt_dev]')
+  END
+
+  
+
+  
+  EXEC('create view 
+    [dbt_dev].[testview_636d14ea1d39b469cf13691d70995503_7731]
+   as 
+    
+    
+    
+
+
+
+select id
+from "free-sql-db-5344531"."dbt_dev"."my_first_dbt_model"
+where id is null
+
+
+
+  ;')
+  select
+    
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from (
+    select * from 
+    [dbt_dev].[testview_636d14ea1d39b469cf13691d70995503_7731]
+  
+  ) dbt_internal_test;
+
+  EXEC('drop view 
+    [dbt_dev].[testview_636d14ea1d39b469cf13691d70995503_7731]
+  ;')
+[0m17:42:20.863822 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:42:20.864361 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:42:20.864868 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:42:20.892134 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:42:20.892839 [debug] [Thread-1 (]: On test.dbt_weather.not_null_my_first_dbt_model_id.5fb22c2710: ROLLBACK
+[0m17:42:20.893406 [debug] [Thread-1 (]: On test.dbt_weather.not_null_my_first_dbt_model_id.5fb22c2710: Close
+[0m17:42:20.894028 [error] [Thread-1 (]: [31mUnhandled error while executing target/run/dbt_weather/models/example/schema.yml/not_null_my_first_dbt_model_id.sql[0m
+('42S02', "[42S02] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid object name 'free-sql-db-5344531.dbt_dev.my_first_dbt_model'. (208) (SQLMoreResults)")
+[0m17:42:20.897263 [debug] [Thread-1 (]: Traceback (most recent call last):
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/task/base.py", line 363, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/task/base.py", line 310, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/task/base.py", line 410, in run
+    return self.execute(compiled_node, manifest)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/task/test.py", line 290, in execute
+    test_result = self.execute_data_test(test, manifest)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/task/test.py", line 165, in execute_data_test
+    macro_func()
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/clients/jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "<template>", line 188, in macro
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/clients/jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "<template>", line 52, in macro
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt_common/record.py", line 538, in record_replay_wrapper
+    return func_to_record(*call_args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/adapters/base/impl.py", line 471, in execute
+    return self.connections.execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/adapters/fabric/fabric_connection_manager.py", line 562, in execute
+    if not cursor.nextset():
+           ^^^^^^^^^^^^^^^^
+pyodbc.ProgrammingError: ('42S02', "[42S02] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid object name 'free-sql-db-5344531.dbt_dev.my_first_dbt_model'. (208) (SQLMoreResults)")
+
+[0m17:42:20.898518 [error] [Thread-1 (]: 1 of 7 ERROR not_null_my_first_dbt_model_id .................................... [[31mERROR[0m in 0.08s]
+[0m17:42:20.899619 [debug] [Thread-1 (]: Finished running node test.dbt_weather.not_null_my_first_dbt_model_id.5fb22c2710
+[0m17:42:20.900415 [debug] [Thread-1 (]: Began running node test.dbt_weather.not_null_my_second_dbt_model_id.151b76d778
+[0m17:42:20.901269 [info ] [Thread-1 (]: 2 of 7 START test not_null_my_second_dbt_model_id .............................. [RUN]
+[0m17:42:20.902178 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_weather.not_null_my_first_dbt_model_id.5fb22c2710, now test.dbt_weather.not_null_my_second_dbt_model_id.151b76d778)
+[0m17:42:20.902964 [debug] [Thread-1 (]: Began compiling node test.dbt_weather.not_null_my_second_dbt_model_id.151b76d778
+[0m17:42:20.904147 [debug] [Thread-4 (]: Marking all children of 'test.dbt_weather.not_null_my_first_dbt_model_id.5fb22c2710' to be skipped because of status 'error'.  Reason: ('42S02', "[42S02] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid object name 'free-sql-db-5344531.dbt_dev.my_first_dbt_model'. (208) (SQLMoreResults)").
+[0m17:42:20.910861 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_weather.not_null_my_second_dbt_model_id.151b76d778"
+[0m17:42:20.912370 [debug] [Thread-1 (]: Began executing node test.dbt_weather.not_null_my_second_dbt_model_id.151b76d778
+[0m17:42:20.915362 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_weather.not_null_my_second_dbt_model_id.151b76d778"
+[0m17:42:20.916034 [debug] [Thread-1 (]: Using sqlserver connection "test.dbt_weather.not_null_my_second_dbt_model_id.151b76d778"
+[0m17:42:20.916575 [debug] [Thread-1 (]: On test.dbt_weather.not_null_my_second_dbt_model_id.151b76d778: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "test.dbt_weather.not_null_my_second_dbt_model_id.151b76d778"} */
+
+    
+    -- Create target schema if it does not
+  USE [free-sql-db-5344531];
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbt_dev')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbt_dev]')
+  END
+
+  
+
+  
+  EXEC('create view 
+    [dbt_dev].[testview_93f97fdf737f03a68627b94b6bd3567e_5728]
+   as 
+    
+    
+    
+
+
+
+select id
+from "free-sql-db-5344531"."dbt_dev"."my_second_dbt_model"
+where id is null
+
+
+
+  ;')
+  select
+    
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from (
+    select * from 
+    [dbt_dev].[testview_93f97fdf737f03a68627b94b6bd3567e_5728]
+  
+  ) dbt_internal_test;
+
+  EXEC('drop view 
+    [dbt_dev].[testview_93f97fdf737f03a68627b94b6bd3567e_5728]
+  ;')
+[0m17:42:20.917091 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:42:20.917592 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:42:20.918108 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:42:20.941376 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:42:20.942096 [debug] [Thread-1 (]: On test.dbt_weather.not_null_my_second_dbt_model_id.151b76d778: ROLLBACK
+[0m17:42:20.942637 [debug] [Thread-1 (]: On test.dbt_weather.not_null_my_second_dbt_model_id.151b76d778: Close
+[0m17:42:20.943295 [error] [Thread-1 (]: [31mUnhandled error while executing target/run/dbt_weather/models/example/schema.yml/not_null_my_second_dbt_model_id.sql[0m
+('42S02', "[42S02] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid object name 'free-sql-db-5344531.dbt_dev.my_second_dbt_model'. (208) (SQLMoreResults)")
+[0m17:42:20.945215 [debug] [Thread-1 (]: Traceback (most recent call last):
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/task/base.py", line 363, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/task/base.py", line 310, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/task/base.py", line 410, in run
+    return self.execute(compiled_node, manifest)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/task/test.py", line 290, in execute
+    test_result = self.execute_data_test(test, manifest)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/task/test.py", line 165, in execute_data_test
+    macro_func()
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/clients/jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "<template>", line 188, in macro
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/clients/jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "<template>", line 52, in macro
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt_common/record.py", line 538, in record_replay_wrapper
+    return func_to_record(*call_args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/adapters/base/impl.py", line 471, in execute
+    return self.connections.execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/adapters/fabric/fabric_connection_manager.py", line 562, in execute
+    if not cursor.nextset():
+           ^^^^^^^^^^^^^^^^
+pyodbc.ProgrammingError: ('42S02', "[42S02] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid object name 'free-sql-db-5344531.dbt_dev.my_second_dbt_model'. (208) (SQLMoreResults)")
+
+[0m17:42:20.945974 [error] [Thread-1 (]: 2 of 7 ERROR not_null_my_second_dbt_model_id ................................... [[31mERROR[0m in 0.04s]
+[0m17:42:20.946776 [debug] [Thread-1 (]: Finished running node test.dbt_weather.not_null_my_second_dbt_model_id.151b76d778
+[0m17:42:20.947342 [debug] [Thread-1 (]: Began running node test.dbt_weather.not_null_stg_weather_hourly_location_name.83ebe4c3a1
+[0m17:42:20.947980 [debug] [Thread-4 (]: Marking all children of 'test.dbt_weather.not_null_my_second_dbt_model_id.151b76d778' to be skipped because of status 'error'.  Reason: ('42S02', "[42S02] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid object name 'free-sql-db-5344531.dbt_dev.my_second_dbt_model'. (208) (SQLMoreResults)").
+[0m17:42:20.948503 [info ] [Thread-1 (]: 3 of 7 START test not_null_stg_weather_hourly_location_name .................... [RUN]
+[0m17:42:20.949450 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_weather.not_null_my_second_dbt_model_id.151b76d778, now test.dbt_weather.not_null_stg_weather_hourly_location_name.83ebe4c3a1)
+[0m17:42:20.950033 [debug] [Thread-1 (]: Began compiling node test.dbt_weather.not_null_stg_weather_hourly_location_name.83ebe4c3a1
+[0m17:42:20.958146 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_weather.not_null_stg_weather_hourly_location_name.83ebe4c3a1"
+[0m17:42:20.959320 [debug] [Thread-1 (]: Began executing node test.dbt_weather.not_null_stg_weather_hourly_location_name.83ebe4c3a1
+[0m17:42:20.962302 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_weather.not_null_stg_weather_hourly_location_name.83ebe4c3a1"
+[0m17:42:20.963122 [debug] [Thread-1 (]: Using sqlserver connection "test.dbt_weather.not_null_stg_weather_hourly_location_name.83ebe4c3a1"
+[0m17:42:20.963805 [debug] [Thread-1 (]: On test.dbt_weather.not_null_stg_weather_hourly_location_name.83ebe4c3a1: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "test.dbt_weather.not_null_stg_weather_hourly_location_name.83ebe4c3a1"} */
+
+    
+    -- Create target schema if it does not
+  USE [free-sql-db-5344531];
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbt_dev')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbt_dev]')
+  END
+
+  
+
+  
+  EXEC('create view 
+    [dbt_dev].[testview_479a7a1bcef5268927ee8a25c5641c4a_17434]
+   as 
+    
+    
+    
+
+
+
+select location_name
+from "free-sql-db-5344531"."dbt_dev_silver"."stg_weather_hourly"
+where location_name is null
+
+
+
+  ;')
+  select
+    
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from (
+    select * from 
+    [dbt_dev].[testview_479a7a1bcef5268927ee8a25c5641c4a_17434]
+  
+  ) dbt_internal_test;
+
+  EXEC('drop view 
+    [dbt_dev].[testview_479a7a1bcef5268927ee8a25c5641c4a_17434]
+  ;')
+[0m17:42:20.964343 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:42:20.964842 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:42:20.965366 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:42:20.998034 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:42:21.002483 [debug] [Thread-1 (]: On test.dbt_weather.not_null_stg_weather_hourly_location_name.83ebe4c3a1: ROLLBACK
+[0m17:42:21.003077 [debug] [Thread-1 (]: On test.dbt_weather.not_null_stg_weather_hourly_location_name.83ebe4c3a1: Close
+[0m17:42:21.003822 [info ] [Thread-1 (]: 3 of 7 PASS not_null_stg_weather_hourly_location_name .......................... [[32mPASS[0m in 0.05s]
+[0m17:42:21.004663 [debug] [Thread-1 (]: Finished running node test.dbt_weather.not_null_stg_weather_hourly_location_name.83ebe4c3a1
+[0m17:42:21.005172 [debug] [Thread-1 (]: Began running node test.dbt_weather.not_null_stg_weather_hourly_observation_dt.d5048b39d0
+[0m17:42:21.005735 [info ] [Thread-1 (]: 4 of 7 START test not_null_stg_weather_hourly_observation_dt ................... [RUN]
+[0m17:42:21.006385 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_weather.not_null_stg_weather_hourly_location_name.83ebe4c3a1, now test.dbt_weather.not_null_stg_weather_hourly_observation_dt.d5048b39d0)
+[0m17:42:21.006864 [debug] [Thread-1 (]: Began compiling node test.dbt_weather.not_null_stg_weather_hourly_observation_dt.d5048b39d0
+[0m17:42:21.012562 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_weather.not_null_stg_weather_hourly_observation_dt.d5048b39d0"
+[0m17:42:21.013289 [debug] [Thread-1 (]: Began executing node test.dbt_weather.not_null_stg_weather_hourly_observation_dt.d5048b39d0
+[0m17:42:21.016179 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_weather.not_null_stg_weather_hourly_observation_dt.d5048b39d0"
+[0m17:42:21.016846 [debug] [Thread-1 (]: Using sqlserver connection "test.dbt_weather.not_null_stg_weather_hourly_observation_dt.d5048b39d0"
+[0m17:42:21.017394 [debug] [Thread-1 (]: On test.dbt_weather.not_null_stg_weather_hourly_observation_dt.d5048b39d0: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "test.dbt_weather.not_null_stg_weather_hourly_observation_dt.d5048b39d0"} */
+
+    
+    -- Create target schema if it does not
+  USE [free-sql-db-5344531];
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbt_dev')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbt_dev]')
+  END
+
+  
+
+  
+  EXEC('create view 
+    [dbt_dev].[testview_ce5e13ab0f62b2f1f6121188a64fe0df_2347]
+   as 
+    
+    
+    
+
+
+
+select observation_dt
+from "free-sql-db-5344531"."dbt_dev_silver"."stg_weather_hourly"
+where observation_dt is null
+
+
+
+  ;')
+  select
+    
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from (
+    select * from 
+    [dbt_dev].[testview_ce5e13ab0f62b2f1f6121188a64fe0df_2347]
+  
+  ) dbt_internal_test;
+
+  EXEC('drop view 
+    [dbt_dev].[testview_ce5e13ab0f62b2f1f6121188a64fe0df_2347]
+  ;')
+[0m17:42:21.017889 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:42:21.018395 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:42:21.018899 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:42:21.057075 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:42:21.058915 [debug] [Thread-1 (]: On test.dbt_weather.not_null_stg_weather_hourly_observation_dt.d5048b39d0: ROLLBACK
+[0m17:42:21.059484 [debug] [Thread-1 (]: On test.dbt_weather.not_null_stg_weather_hourly_observation_dt.d5048b39d0: Close
+[0m17:42:21.060208 [info ] [Thread-1 (]: 4 of 7 PASS not_null_stg_weather_hourly_observation_dt ......................... [[32mPASS[0m in 0.05s]
+[0m17:42:21.061011 [debug] [Thread-1 (]: Finished running node test.dbt_weather.not_null_stg_weather_hourly_observation_dt.d5048b39d0
+[0m17:42:21.061574 [debug] [Thread-1 (]: Began running node test.dbt_weather.not_null_stg_weather_hourly_temperature_c.bb5ee8d21f
+[0m17:42:21.062179 [info ] [Thread-1 (]: 5 of 7 START test not_null_stg_weather_hourly_temperature_c .................... [RUN]
+[0m17:42:21.062815 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_weather.not_null_stg_weather_hourly_observation_dt.d5048b39d0, now test.dbt_weather.not_null_stg_weather_hourly_temperature_c.bb5ee8d21f)
+[0m17:42:21.063339 [debug] [Thread-1 (]: Began compiling node test.dbt_weather.not_null_stg_weather_hourly_temperature_c.bb5ee8d21f
+[0m17:42:21.069161 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_weather.not_null_stg_weather_hourly_temperature_c.bb5ee8d21f"
+[0m17:42:21.069863 [debug] [Thread-1 (]: Began executing node test.dbt_weather.not_null_stg_weather_hourly_temperature_c.bb5ee8d21f
+[0m17:42:21.075619 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_weather.not_null_stg_weather_hourly_temperature_c.bb5ee8d21f"
+[0m17:42:21.076752 [debug] [Thread-1 (]: Using sqlserver connection "test.dbt_weather.not_null_stg_weather_hourly_temperature_c.bb5ee8d21f"
+[0m17:42:21.077603 [debug] [Thread-1 (]: On test.dbt_weather.not_null_stg_weather_hourly_temperature_c.bb5ee8d21f: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "test.dbt_weather.not_null_stg_weather_hourly_temperature_c.bb5ee8d21f"} */
+
+    
+    -- Create target schema if it does not
+  USE [free-sql-db-5344531];
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbt_dev')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbt_dev]')
+  END
+
+  
+
+  
+  EXEC('create view 
+    [dbt_dev].[testview_e610a2123f6d23f50e66d3813246ffd1_15166]
+   as 
+    
+    
+    
+
+
+
+select temperature_c
+from "free-sql-db-5344531"."dbt_dev_silver"."stg_weather_hourly"
+where temperature_c is null
+
+
+
+  ;')
+  select
+    
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from (
+    select * from 
+    [dbt_dev].[testview_e610a2123f6d23f50e66d3813246ffd1_15166]
+  
+  ) dbt_internal_test;
+
+  EXEC('drop view 
+    [dbt_dev].[testview_e610a2123f6d23f50e66d3813246ffd1_15166]
+  ;')
+[0m17:42:21.078547 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:42:21.079425 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:42:21.080333 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:42:21.118598 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:42:21.124763 [debug] [Thread-1 (]: On test.dbt_weather.not_null_stg_weather_hourly_temperature_c.bb5ee8d21f: ROLLBACK
+[0m17:42:21.125661 [debug] [Thread-1 (]: On test.dbt_weather.not_null_stg_weather_hourly_temperature_c.bb5ee8d21f: Close
+[0m17:42:21.127664 [info ] [Thread-1 (]: 5 of 7 PASS not_null_stg_weather_hourly_temperature_c .......................... [[32mPASS[0m in 0.06s]
+[0m17:42:21.130339 [debug] [Thread-1 (]: Finished running node test.dbt_weather.not_null_stg_weather_hourly_temperature_c.bb5ee8d21f
+[0m17:42:21.131229 [debug] [Thread-1 (]: Began running node test.dbt_weather.unique_my_first_dbt_model_id.16e066b321
+[0m17:42:21.132145 [info ] [Thread-1 (]: 6 of 7 START test unique_my_first_dbt_model_id ................................. [RUN]
+[0m17:42:21.133107 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_weather.not_null_stg_weather_hourly_temperature_c.bb5ee8d21f, now test.dbt_weather.unique_my_first_dbt_model_id.16e066b321)
+[0m17:42:21.133877 [debug] [Thread-1 (]: Began compiling node test.dbt_weather.unique_my_first_dbt_model_id.16e066b321
+[0m17:42:21.155020 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_weather.unique_my_first_dbt_model_id.16e066b321"
+[0m17:42:21.156294 [debug] [Thread-1 (]: Began executing node test.dbt_weather.unique_my_first_dbt_model_id.16e066b321
+[0m17:42:21.159775 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_weather.unique_my_first_dbt_model_id.16e066b321"
+[0m17:42:21.160506 [debug] [Thread-1 (]: Using sqlserver connection "test.dbt_weather.unique_my_first_dbt_model_id.16e066b321"
+[0m17:42:21.161292 [debug] [Thread-1 (]: On test.dbt_weather.unique_my_first_dbt_model_id.16e066b321: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "test.dbt_weather.unique_my_first_dbt_model_id.16e066b321"} */
+
+    
+    -- Create target schema if it does not
+  USE [free-sql-db-5344531];
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbt_dev')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbt_dev]')
+  END
+
+  
+
+  
+  EXEC('create view 
+    [dbt_dev].[testview_09bfc1f6e2654cb7c3f5b282c4ea0d12_15387]
+   as 
+    
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "free-sql-db-5344531"."dbt_dev"."my_first_dbt_model"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+  ;')
+  select
+    
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from (
+    select * from 
+    [dbt_dev].[testview_09bfc1f6e2654cb7c3f5b282c4ea0d12_15387]
+  
+  ) dbt_internal_test;
+
+  EXEC('drop view 
+    [dbt_dev].[testview_09bfc1f6e2654cb7c3f5b282c4ea0d12_15387]
+  ;')
+[0m17:42:21.162132 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:42:21.163175 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:42:21.164080 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:42:21.187980 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:42:21.188762 [debug] [Thread-1 (]: On test.dbt_weather.unique_my_first_dbt_model_id.16e066b321: ROLLBACK
+[0m17:42:21.189302 [debug] [Thread-1 (]: On test.dbt_weather.unique_my_first_dbt_model_id.16e066b321: Close
+[0m17:42:21.189917 [error] [Thread-1 (]: [31mUnhandled error while executing target/run/dbt_weather/models/example/schema.yml/unique_my_first_dbt_model_id.sql[0m
+('42S02', "[42S02] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid object name 'free-sql-db-5344531.dbt_dev.my_first_dbt_model'. (208) (SQLMoreResults)")
+[0m17:42:21.191871 [debug] [Thread-1 (]: Traceback (most recent call last):
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/task/base.py", line 363, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/task/base.py", line 310, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/task/base.py", line 410, in run
+    return self.execute(compiled_node, manifest)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/task/test.py", line 290, in execute
+    test_result = self.execute_data_test(test, manifest)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/task/test.py", line 165, in execute_data_test
+    macro_func()
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/clients/jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "<template>", line 188, in macro
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/clients/jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "<template>", line 52, in macro
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt_common/record.py", line 538, in record_replay_wrapper
+    return func_to_record(*call_args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/adapters/base/impl.py", line 471, in execute
+    return self.connections.execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/adapters/fabric/fabric_connection_manager.py", line 562, in execute
+    if not cursor.nextset():
+           ^^^^^^^^^^^^^^^^
+pyodbc.ProgrammingError: ('42S02', "[42S02] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid object name 'free-sql-db-5344531.dbt_dev.my_first_dbt_model'. (208) (SQLMoreResults)")
+
+[0m17:42:21.192634 [error] [Thread-1 (]: 6 of 7 ERROR unique_my_first_dbt_model_id ...................................... [[31mERROR[0m in 0.06s]
+[0m17:42:21.193419 [debug] [Thread-1 (]: Finished running node test.dbt_weather.unique_my_first_dbt_model_id.16e066b321
+[0m17:42:21.193936 [debug] [Thread-1 (]: Began running node test.dbt_weather.unique_my_second_dbt_model_id.57a0f8c493
+[0m17:42:21.194555 [debug] [Thread-4 (]: Marking all children of 'test.dbt_weather.unique_my_first_dbt_model_id.16e066b321' to be skipped because of status 'error'.  Reason: ('42S02', "[42S02] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid object name 'free-sql-db-5344531.dbt_dev.my_first_dbt_model'. (208) (SQLMoreResults)").
+[0m17:42:21.195004 [info ] [Thread-1 (]: 7 of 7 START test unique_my_second_dbt_model_id ................................ [RUN]
+[0m17:42:21.195939 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_weather.unique_my_first_dbt_model_id.16e066b321, now test.dbt_weather.unique_my_second_dbt_model_id.57a0f8c493)
+[0m17:42:21.196472 [debug] [Thread-1 (]: Began compiling node test.dbt_weather.unique_my_second_dbt_model_id.57a0f8c493
+[0m17:42:21.202312 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_weather.unique_my_second_dbt_model_id.57a0f8c493"
+[0m17:42:21.203008 [debug] [Thread-1 (]: Began executing node test.dbt_weather.unique_my_second_dbt_model_id.57a0f8c493
+[0m17:42:21.205885 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_weather.unique_my_second_dbt_model_id.57a0f8c493"
+[0m17:42:21.206585 [debug] [Thread-1 (]: Using sqlserver connection "test.dbt_weather.unique_my_second_dbt_model_id.57a0f8c493"
+[0m17:42:21.207120 [debug] [Thread-1 (]: On test.dbt_weather.unique_my_second_dbt_model_id.57a0f8c493: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "test.dbt_weather.unique_my_second_dbt_model_id.57a0f8c493"} */
+
+    
+    -- Create target schema if it does not
+  USE [free-sql-db-5344531];
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbt_dev')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbt_dev]')
+  END
+
+  
+
+  
+  EXEC('create view 
+    [dbt_dev].[testview_37c6c130ad58aadeb0d428ae51094c72_3609]
+   as 
+    
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "free-sql-db-5344531"."dbt_dev"."my_second_dbt_model"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+  ;')
+  select
+    
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from (
+    select * from 
+    [dbt_dev].[testview_37c6c130ad58aadeb0d428ae51094c72_3609]
+  
+  ) dbt_internal_test;
+
+  EXEC('drop view 
+    [dbt_dev].[testview_37c6c130ad58aadeb0d428ae51094c72_3609]
+  ;')
+[0m17:42:21.207624 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:42:21.208129 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:42:21.208646 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:42:21.232130 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:42:21.232830 [debug] [Thread-1 (]: On test.dbt_weather.unique_my_second_dbt_model_id.57a0f8c493: ROLLBACK
+[0m17:42:21.233389 [debug] [Thread-1 (]: On test.dbt_weather.unique_my_second_dbt_model_id.57a0f8c493: Close
+[0m17:42:21.234008 [error] [Thread-1 (]: [31mUnhandled error while executing target/run/dbt_weather/models/example/schema.yml/unique_my_second_dbt_model_id.sql[0m
+('42S02', "[42S02] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid object name 'free-sql-db-5344531.dbt_dev.my_second_dbt_model'. (208) (SQLMoreResults)")
+[0m17:42:21.236068 [debug] [Thread-1 (]: Traceback (most recent call last):
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/task/base.py", line 363, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/task/base.py", line 310, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/task/base.py", line 410, in run
+    return self.execute(compiled_node, manifest)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/task/test.py", line 290, in execute
+    test_result = self.execute_data_test(test, manifest)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/task/test.py", line 165, in execute_data_test
+    macro_func()
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/clients/jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "<template>", line 188, in macro
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/clients/jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "<template>", line 52, in macro
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.local/lib/python3.12/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt_common/record.py", line 538, in record_replay_wrapper
+    return func_to_record(*call_args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/adapters/base/impl.py", line 471, in execute
+    return self.connections.execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/dbt/adapters/fabric/fabric_connection_manager.py", line 562, in execute
+    if not cursor.nextset():
+           ^^^^^^^^^^^^^^^^
+pyodbc.ProgrammingError: ('42S02', "[42S02] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid object name 'free-sql-db-5344531.dbt_dev.my_second_dbt_model'. (208) (SQLMoreResults)")
+
+[0m17:42:21.236818 [error] [Thread-1 (]: 7 of 7 ERROR unique_my_second_dbt_model_id ..................................... [[31mERROR[0m in 0.04s]
+[0m17:42:21.237625 [debug] [Thread-1 (]: Finished running node test.dbt_weather.unique_my_second_dbt_model_id.57a0f8c493
+[0m17:42:21.238266 [debug] [Thread-4 (]: Marking all children of 'test.dbt_weather.unique_my_second_dbt_model_id.57a0f8c493' to be skipped because of status 'error'.  Reason: ('42S02', "[42S02] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid object name 'free-sql-db-5344531.dbt_dev.my_second_dbt_model'. (208) (SQLMoreResults)").
+[0m17:42:21.239709 [debug] [MainThread]: On master: COMMIT
+[0m17:42:21.240297 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:42:21.241885 [debug] [MainThread]: Connection 'test.dbt_weather.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m17:42:21.243008 [info ] [MainThread]: 
+[0m17:42:21.243751 [info ] [MainThread]: Finished running 7 data tests in 0 hours 0 minutes and 0.93 seconds (0.93s).
+[0m17:42:21.245444 [debug] [MainThread]: Command end result
+[0m17:42:21.273848 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/weather-project/dbt_weather/target/manifest.json
+[0m17:42:21.275817 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/weather-project/dbt_weather/target/semantic_manifest.json
+[0m17:42:21.286464 [debug] [MainThread]: Wrote artifact RunExecutionResult to /workspaces/weather-project/dbt_weather/target/run_results.json
+[0m17:42:21.288345 [info ] [MainThread]: 
+[0m17:42:21.289269 [info ] [MainThread]: [31mCompleted with 4 errors, 0 partial successes, and 0 warnings:[0m
+[0m17:42:21.289809 [info ] [MainThread]: 
+[0m17:42:21.290454 [error] [MainThread]: [31mFailure in test not_null_my_first_dbt_model_id (models/example/schema.yml)[0m
+[0m17:42:21.291058 [error] [MainThread]:   ('42S02', "[42S02] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid object name 'free-sql-db-5344531.dbt_dev.my_first_dbt_model'. (208) (SQLMoreResults)")
+[0m17:42:21.291533 [info ] [MainThread]: 
+[0m17:42:21.292111 [info ] [MainThread]:   compiled code at target/compiled/dbt_weather/models/example/schema.yml/not_null_my_first_dbt_model_id.sql
+[0m17:42:21.292594 [info ] [MainThread]: 
+[0m17:42:21.293179 [error] [MainThread]: [31mFailure in test not_null_my_second_dbt_model_id (models/example/schema.yml)[0m
+[0m17:42:21.294286 [error] [MainThread]:   ('42S02', "[42S02] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid object name 'free-sql-db-5344531.dbt_dev.my_second_dbt_model'. (208) (SQLMoreResults)")
+[0m17:42:21.294900 [info ] [MainThread]: 
+[0m17:42:21.295763 [info ] [MainThread]:   compiled code at target/compiled/dbt_weather/models/example/schema.yml/not_null_my_second_dbt_model_id.sql
+[0m17:42:21.296499 [info ] [MainThread]: 
+[0m17:42:21.297407 [error] [MainThread]: [31mFailure in test unique_my_first_dbt_model_id (models/example/schema.yml)[0m
+[0m17:42:21.297973 [error] [MainThread]:   ('42S02', "[42S02] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid object name 'free-sql-db-5344531.dbt_dev.my_first_dbt_model'. (208) (SQLMoreResults)")
+[0m17:42:21.298457 [info ] [MainThread]: 
+[0m17:42:21.299004 [info ] [MainThread]:   compiled code at target/compiled/dbt_weather/models/example/schema.yml/unique_my_first_dbt_model_id.sql
+[0m17:42:21.299548 [info ] [MainThread]: 
+[0m17:42:21.300173 [error] [MainThread]: [31mFailure in test unique_my_second_dbt_model_id (models/example/schema.yml)[0m
+[0m17:42:21.300803 [error] [MainThread]:   ('42S02', "[42S02] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Invalid object name 'free-sql-db-5344531.dbt_dev.my_second_dbt_model'. (208) (SQLMoreResults)")
+[0m17:42:21.301535 [info ] [MainThread]: 
+[0m17:42:21.302320 [info ] [MainThread]:   compiled code at target/compiled/dbt_weather/models/example/schema.yml/unique_my_second_dbt_model_id.sql
+[0m17:42:21.303004 [info ] [MainThread]: 
+[0m17:42:21.303840 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=4 SKIP=0 NO-OP=0 TOTAL=7
+[0m17:42:21.305035 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 1.9162763, "process_in_blocks": "1040", "process_kernel_time": 0.244495, "process_mem_max_rss": "153668", "process_out_blocks": "2712", "process_user_time": 3.702212}
+[0m17:42:21.306116 [debug] [MainThread]: Command `dbt test` failed at 17:42:21.305931 after 1.92 seconds
+[0m17:42:21.306935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x756f9bb00800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x756f9bbf7b30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x756f98efbe90>]}
+[0m17:42:21.307754 [debug] [MainThread]: Flushing usage events
+[0m17:42:21.647803 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:43:17.624502 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79eee48b4fb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79eee428d3d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79eee2949eb0>]}
+
+
+============================== 17:43:17.630200 | 8fdc8884-18d6-4f37-b58c-5c2612776aba ==============================
+[0m17:43:17.630200 [info ] [MainThread]: Running with dbt=1.11.7
+[0m17:43:17.631326 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/home/codespace/.dbt', 'debug': 'False', 'log_format': 'default', 'log_cache_events': 'False', 'fail_fast': 'False', 'warn_error': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt test', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'printer_width': '80', 'log_path': '/workspaces/weather-project/dbt_weather/logs', 'quiet': 'False', 'use_colors': 'True', 'target_path': 'None', 'cache_selected_only': 'False', 'no_print': 'None', 'write_json': 'True', 'version_check': 'True', 'partial_parse': 'True', 'introspect': 'True', 'empty': 'None'}
+[0m17:43:17.953301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8fdc8884-18d6-4f37-b58c-5c2612776aba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79eee0731be0>]}
+[0m17:43:18.020752 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8fdc8884-18d6-4f37-b58c-5c2612776aba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79eee1e97200>]}
+[0m17:43:18.021627 [info ] [MainThread]: Registered adapter: sqlserver=1.9.0
+[0m17:43:18.145358 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m17:43:18.287753 [debug] [MainThread]: Partial parsing enabled: 3 files deleted, 0 files added, 0 files changed.
+[0m17:43:18.288823 [debug] [MainThread]: Partial parsing: deleted file: dbt_weather://models/example/my_first_dbt_model.sql
+[0m17:43:18.289588 [debug] [MainThread]: Partial parsing: deleted file: dbt_weather://models/example/my_second_dbt_model.sql
+[0m17:43:18.470479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8fdc8884-18d6-4f37-b58c-5c2612776aba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79eee25656d0>]}
+[0m17:43:18.558071 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/weather-project/dbt_weather/target/manifest.json
+[0m17:43:18.560185 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/weather-project/dbt_weather/target/semantic_manifest.json
+[0m17:43:18.581701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8fdc8884-18d6-4f37-b58c-5c2612776aba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79eee06bb200>]}
+[0m17:43:18.582389 [info ] [MainThread]: Found 3 models, 3 data tests, 1 source, 539 macros
+[0m17:43:18.582993 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8fdc8884-18d6-4f37-b58c-5c2612776aba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79eee029afc0>]}
+[0m17:43:18.585004 [info ] [MainThread]: 
+[0m17:43:18.585578 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:43:18.586074 [info ] [MainThread]: 
+[0m17:43:18.586789 [debug] [MainThread]: Acquiring new sqlserver connection 'master'
+[0m17:43:18.593591 [debug] [ThreadPool]: Acquiring new sqlserver connection 'list_free-sql-db-5344531_dbt_dev_gold'
+[0m17:43:18.613532 [debug] [ThreadPool]: dbt-sqlserver
+[0m17:43:18.614451 [debug] [ThreadPool]: Using sqlserver connection "list_free-sql-db-5344531_dbt_dev_gold"
+[0m17:43:18.615241 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev_gold: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "connection_name": "list_free-sql-db-5344531_dbt_dev_gold"} */
+USE [free-sql-db-5344531];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t with (nolock)
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v with (nolock)
+    )
+    select * from base
+    where [schema] like 'dbt_dev_gold'
+    
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m17:43:18.615905 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:43:18.616898 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:43:18.987634 [debug] [ThreadPool]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:43:19.010663 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:43:19.012395 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev_gold: ROLLBACK
+[0m17:43:19.012889 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev_gold: Close
+[0m17:43:19.013604 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_free-sql-db-5344531_dbt_dev_gold, now list_free-sql-db-5344531_dbt_dev_silver)
+[0m17:43:19.018123 [debug] [ThreadPool]: dbt-sqlserver
+[0m17:43:19.018634 [debug] [ThreadPool]: Using sqlserver connection "list_free-sql-db-5344531_dbt_dev_silver"
+[0m17:43:19.019121 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev_silver: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "connection_name": "list_free-sql-db-5344531_dbt_dev_silver"} */
+USE [free-sql-db-5344531];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t with (nolock)
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v with (nolock)
+    )
+    select * from base
+    where [schema] like 'dbt_dev_silver'
+    
+    OPTION (LABEL = 'dbt-sqlserver');
+
+  
+[0m17:43:19.019560 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:43:19.020035 [debug] [ThreadPool]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:43:19.020530 [debug] [ThreadPool]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:43:19.043187 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m17:43:19.044837 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev_silver: ROLLBACK
+[0m17:43:19.045325 [debug] [ThreadPool]: On list_free-sql-db-5344531_dbt_dev_silver: Close
+[0m17:43:19.046380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8fdc8884-18d6-4f37-b58c-5c2612776aba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79eee061a1e0>]}
+[0m17:43:19.047034 [debug] [MainThread]: On master: COMMIT
+[0m17:43:19.049260 [debug] [Thread-1 (]: Began running node test.dbt_weather.not_null_stg_weather_hourly_location_name.83ebe4c3a1
+[0m17:43:19.049827 [info ] [Thread-1 (]: 1 of 3 START test not_null_stg_weather_hourly_location_name .................... [RUN]
+[0m17:43:19.050518 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_free-sql-db-5344531_dbt_dev_silver, now test.dbt_weather.not_null_stg_weather_hourly_location_name.83ebe4c3a1)
+[0m17:43:19.051020 [debug] [Thread-1 (]: Began compiling node test.dbt_weather.not_null_stg_weather_hourly_location_name.83ebe4c3a1
+[0m17:43:19.068560 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_weather.not_null_stg_weather_hourly_location_name.83ebe4c3a1"
+[0m17:43:19.069378 [debug] [Thread-1 (]: Began executing node test.dbt_weather.not_null_stg_weather_hourly_location_name.83ebe4c3a1
+[0m17:43:19.091888 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_weather.not_null_stg_weather_hourly_location_name.83ebe4c3a1"
+[0m17:43:19.093574 [debug] [Thread-1 (]: Using sqlserver connection "test.dbt_weather.not_null_stg_weather_hourly_location_name.83ebe4c3a1"
+[0m17:43:19.094220 [debug] [Thread-1 (]: On test.dbt_weather.not_null_stg_weather_hourly_location_name.83ebe4c3a1: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "test.dbt_weather.not_null_stg_weather_hourly_location_name.83ebe4c3a1"} */
+
+    
+    -- Create target schema if it does not
+  USE [free-sql-db-5344531];
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbt_dev')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbt_dev]')
+  END
+
+  
+
+  
+  EXEC('create view 
+    [dbt_dev].[testview_479a7a1bcef5268927ee8a25c5641c4a_15862]
+   as 
+    
+    
+    
+
+
+
+select location_name
+from "free-sql-db-5344531"."dbt_dev_silver"."stg_weather_hourly"
+where location_name is null
+
+
+
+  ;')
+  select
+    
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from (
+    select * from 
+    [dbt_dev].[testview_479a7a1bcef5268927ee8a25c5641c4a_15862]
+  
+  ) dbt_internal_test;
+
+  EXEC('drop view 
+    [dbt_dev].[testview_479a7a1bcef5268927ee8a25c5641c4a_15862]
+  ;')
+[0m17:43:19.094745 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:43:19.095323 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:43:19.095833 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:43:19.129622 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:43:19.133876 [debug] [Thread-1 (]: On test.dbt_weather.not_null_stg_weather_hourly_location_name.83ebe4c3a1: ROLLBACK
+[0m17:43:19.134454 [debug] [Thread-1 (]: On test.dbt_weather.not_null_stg_weather_hourly_location_name.83ebe4c3a1: Close
+[0m17:43:19.135191 [info ] [Thread-1 (]: 1 of 3 PASS not_null_stg_weather_hourly_location_name .......................... [[32mPASS[0m in 0.08s]
+[0m17:43:19.136015 [debug] [Thread-1 (]: Finished running node test.dbt_weather.not_null_stg_weather_hourly_location_name.83ebe4c3a1
+[0m17:43:19.136578 [debug] [Thread-1 (]: Began running node test.dbt_weather.not_null_stg_weather_hourly_observation_dt.d5048b39d0
+[0m17:43:19.137209 [info ] [Thread-1 (]: 2 of 3 START test not_null_stg_weather_hourly_observation_dt ................... [RUN]
+[0m17:43:19.137876 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_weather.not_null_stg_weather_hourly_location_name.83ebe4c3a1, now test.dbt_weather.not_null_stg_weather_hourly_observation_dt.d5048b39d0)
+[0m17:43:19.138439 [debug] [Thread-1 (]: Began compiling node test.dbt_weather.not_null_stg_weather_hourly_observation_dt.d5048b39d0
+[0m17:43:19.146265 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_weather.not_null_stg_weather_hourly_observation_dt.d5048b39d0"
+[0m17:43:19.147465 [debug] [Thread-1 (]: Began executing node test.dbt_weather.not_null_stg_weather_hourly_observation_dt.d5048b39d0
+[0m17:43:19.150686 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_weather.not_null_stg_weather_hourly_observation_dt.d5048b39d0"
+[0m17:43:19.151455 [debug] [Thread-1 (]: Using sqlserver connection "test.dbt_weather.not_null_stg_weather_hourly_observation_dt.d5048b39d0"
+[0m17:43:19.151991 [debug] [Thread-1 (]: On test.dbt_weather.not_null_stg_weather_hourly_observation_dt.d5048b39d0: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "test.dbt_weather.not_null_stg_weather_hourly_observation_dt.d5048b39d0"} */
+
+    
+    -- Create target schema if it does not
+  USE [free-sql-db-5344531];
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbt_dev')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbt_dev]')
+  END
+
+  
+
+  
+  EXEC('create view 
+    [dbt_dev].[testview_ce5e13ab0f62b2f1f6121188a64fe0df_18750]
+   as 
+    
+    
+    
+
+
+
+select observation_dt
+from "free-sql-db-5344531"."dbt_dev_silver"."stg_weather_hourly"
+where observation_dt is null
+
+
+
+  ;')
+  select
+    
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from (
+    select * from 
+    [dbt_dev].[testview_ce5e13ab0f62b2f1f6121188a64fe0df_18750]
+  
+  ) dbt_internal_test;
+
+  EXEC('drop view 
+    [dbt_dev].[testview_ce5e13ab0f62b2f1f6121188a64fe0df_18750]
+  ;')
+[0m17:43:19.152528 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:43:19.153018 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:43:19.153540 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:43:19.186508 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:43:19.188460 [debug] [Thread-1 (]: On test.dbt_weather.not_null_stg_weather_hourly_observation_dt.d5048b39d0: ROLLBACK
+[0m17:43:19.189021 [debug] [Thread-1 (]: On test.dbt_weather.not_null_stg_weather_hourly_observation_dt.d5048b39d0: Close
+[0m17:43:19.189765 [info ] [Thread-1 (]: 2 of 3 PASS not_null_stg_weather_hourly_observation_dt ......................... [[32mPASS[0m in 0.05s]
+[0m17:43:19.190587 [debug] [Thread-1 (]: Finished running node test.dbt_weather.not_null_stg_weather_hourly_observation_dt.d5048b39d0
+[0m17:43:19.191111 [debug] [Thread-1 (]: Began running node test.dbt_weather.not_null_stg_weather_hourly_temperature_c.bb5ee8d21f
+[0m17:43:19.191719 [info ] [Thread-1 (]: 3 of 3 START test not_null_stg_weather_hourly_temperature_c .................... [RUN]
+[0m17:43:19.192406 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_weather.not_null_stg_weather_hourly_observation_dt.d5048b39d0, now test.dbt_weather.not_null_stg_weather_hourly_temperature_c.bb5ee8d21f)
+[0m17:43:19.192897 [debug] [Thread-1 (]: Began compiling node test.dbt_weather.not_null_stg_weather_hourly_temperature_c.bb5ee8d21f
+[0m17:43:19.198736 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_weather.not_null_stg_weather_hourly_temperature_c.bb5ee8d21f"
+[0m17:43:19.199551 [debug] [Thread-1 (]: Began executing node test.dbt_weather.not_null_stg_weather_hourly_temperature_c.bb5ee8d21f
+[0m17:43:19.202520 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_weather.not_null_stg_weather_hourly_temperature_c.bb5ee8d21f"
+[0m17:43:19.203281 [debug] [Thread-1 (]: Using sqlserver connection "test.dbt_weather.not_null_stg_weather_hourly_temperature_c.bb5ee8d21f"
+[0m17:43:19.203809 [debug] [Thread-1 (]: On test.dbt_weather.not_null_stg_weather_hourly_temperature_c.bb5ee8d21f: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "test.dbt_weather.not_null_stg_weather_hourly_temperature_c.bb5ee8d21f"} */
+
+    
+    -- Create target schema if it does not
+  USE [free-sql-db-5344531];
+  IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = 'dbt_dev')
+  BEGIN
+    EXEC('CREATE SCHEMA [dbt_dev]')
+  END
+
+  
+
+  
+  EXEC('create view 
+    [dbt_dev].[testview_e610a2123f6d23f50e66d3813246ffd1_8182]
+   as 
+    
+    
+    
+
+
+
+select temperature_c
+from "free-sql-db-5344531"."dbt_dev_silver"."stg_weather_hourly"
+where temperature_c is null
+
+
+
+  ;')
+  select
+    
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from (
+    select * from 
+    [dbt_dev].[testview_e610a2123f6d23f50e66d3813246ffd1_8182]
+  
+  ) dbt_internal_test;
+
+  EXEC('drop view 
+    [dbt_dev].[testview_e610a2123f6d23f50e66d3813246ffd1_8182]
+  ;')
+[0m17:43:19.204331 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:43:19.204823 [debug] [Thread-1 (]: sqlserver adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=weather-pipeline-mudge.database.windows.net,1433;Database=free-sql-db-5344531;UID={mudge};PWD=***;encrypt=Yes;TrustServerCertificate=No;APP=dbt-sqlserver/1.9.0
+[0m17:43:19.205349 [debug] [Thread-1 (]: sqlserver adapter: Connected to db: free-sql-db-5344531
+[0m17:43:19.237140 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m17:43:19.238944 [debug] [Thread-1 (]: On test.dbt_weather.not_null_stg_weather_hourly_temperature_c.bb5ee8d21f: ROLLBACK
+[0m17:43:19.239535 [debug] [Thread-1 (]: On test.dbt_weather.not_null_stg_weather_hourly_temperature_c.bb5ee8d21f: Close
+[0m17:43:19.240275 [info ] [Thread-1 (]: 3 of 3 PASS not_null_stg_weather_hourly_temperature_c .......................... [[32mPASS[0m in 0.05s]
+[0m17:43:19.241141 [debug] [Thread-1 (]: Finished running node test.dbt_weather.not_null_stg_weather_hourly_temperature_c.bb5ee8d21f
+[0m17:43:19.242556 [debug] [MainThread]: On master: COMMIT
+[0m17:43:19.243164 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:43:19.243718 [debug] [MainThread]: Connection 'test.dbt_weather.not_null_stg_weather_hourly_temperature_c.bb5ee8d21f' was properly closed.
+[0m17:43:19.244209 [info ] [MainThread]: 
+[0m17:43:19.244748 [info ] [MainThread]: Finished running 3 data tests in 0 hours 0 minutes and 0.66 seconds (0.66s).
+[0m17:43:19.245934 [debug] [MainThread]: Command end result
+[0m17:43:19.273964 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/weather-project/dbt_weather/target/manifest.json
+[0m17:43:19.276836 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/weather-project/dbt_weather/target/semantic_manifest.json
+[0m17:43:19.284083 [debug] [MainThread]: Wrote artifact RunExecutionResult to /workspaces/weather-project/dbt_weather/target/run_results.json
+[0m17:43:19.284559 [info ] [MainThread]: 
+[0m17:43:19.285177 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:43:19.285680 [info ] [MainThread]: 
+[0m17:43:19.286230 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m17:43:19.287330 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 1.7239255, "process_in_blocks": "0", "process_kernel_time": 0.258434, "process_mem_max_rss": "152224", "process_out_blocks": "3704", "process_user_time": 3.752236}
+[0m17:43:19.288072 [debug] [MainThread]: Command `dbt test` succeeded at 17:43:19.287935 after 1.72 seconds
+[0m17:43:19.288569 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79eee2e56600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79eee2bf6c30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79eee2bf6480>]}
+[0m17:43:19.289071 [debug] [MainThread]: Flushing usage events
+[0m17:43:19.648597 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: free-sql-db-5344531
+    schema: dbo
+    tables:
+      - name: bronze_weather_raw
+
+models:
+  - name: stg_weather_hourly
+    description: Cleaned hourly weather observations per city
+    columns:
+      - name: location_name
+        tests: [not_null]
+      - name: observation_dt
+        tests: [not_null]
+      - name: temperature_c
+        tests: [not_null]
