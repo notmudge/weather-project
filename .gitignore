@@ -1,0 +1,2 @@
+.env
+dbt_weather/profiles.yml
