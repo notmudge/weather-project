@@ -1,0 +1,56 @@
+name: dbt transform
+
+on:
+  workflow_run:
+    workflows: ["Daily ingestion"]
+    types: [completed]
+  workflow_dispatch:
+
+jobs:
+  dbt:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == "success" || github.event_name == "workflow_dispatch" }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dbt
+        run: pip install dbt-sqlserver
+
+      - name: Install ODBC Driver 18
+        run: |
+          curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+          curl https://packages.microsoft.com/config/ubuntu/22.04/prod.list | sudo tee /etc/apt/sources.list.d/mssql-release.list
+          sudo apt-get update
+          sudo ACCEPT_EULA=Y apt-get install -y msodbcsql18
+
+      - name: Create profiles.yml
+        run: |
+          mkdir -p ~/.dbt
+          cat > ~/.dbt/profiles.yml << EOF
+          dbt_weather:
+            target: prod
+            outputs:
+              prod:
+                type: sqlserver
+                driver: "ODBC Driver 18 for SQL Server"
+                server: weather-pipeline-mudge.database.windows.net
+                port: 1433
+                database: free-sql-db-5344531
+                schema: dbt_prod
+                user: ${{ secrets.DBT_SQL_USER }}
+                password: ${{ secrets.DBT_SQL_PASSWORD }}
+                encrypt: true
+                trust_cert: false
+                threads: 1
+          EOF
+
+      - name: dbt run and test
+        run: |
+          cd dbt_weather
+          dbt run --target prod
+          dbt test --target prod
